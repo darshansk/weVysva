@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="9zU-Zf-3NH">
+            <objects>
+                <viewController id="ULw-JA-AB3" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="1d2-1u-RA4">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Fmj-Pd-Rkd">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="AmO-4f-ks2"/>
+                                </constraints>
+                                <items>
+                                    <navigationItem title="Title" id="fuz-zR-d1H"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="8LG-PR-DDF">
+                                <rect key="frame" x="20" y="94" width="207" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="ZrS-Ln-WPI"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hmL-Eh-kxk">
+                                <rect key="frame" x="227" y="94" width="167" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="mVi-Gm-FN8"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="Fmj-Pd-Rkd" firstAttribute="top" secondItem="ooC-5E-aN5" secondAttribute="top" id="DJc-RA-xvA"/>
+                            <constraint firstItem="8LG-PR-DDF" firstAttribute="leading" secondItem="1d2-1u-RA4" secondAttribute="leadingMargin" id="Tbo-z3-PLd"/>
+                            <constraint firstItem="hmL-Eh-kxk" firstAttribute="top" secondItem="Fmj-Pd-Rkd" secondAttribute="bottom" id="W0d-BE-x7b"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="hmL-Eh-kxk" secondAttribute="trailing" id="WL0-SG-RBV"/>
+                            <constraint firstItem="Fmj-Pd-Rkd" firstAttribute="leading" secondItem="1d2-1u-RA4" secondAttribute="leading" id="Y8X-9B-zc6"/>
+                            <constraint firstItem="8LG-PR-DDF" firstAttribute="top" secondItem="Fmj-Pd-Rkd" secondAttribute="bottom" id="hES-a7-tEY"/>
+                            <constraint firstAttribute="trailing" secondItem="Fmj-Pd-Rkd" secondAttribute="trailing" id="hJM-K0-fwP"/>
+                            <constraint firstItem="8LG-PR-DDF" firstAttribute="width" secondItem="Fmj-Pd-Rkd" secondAttribute="width" multiplier="0.5" id="lIV-QN-6RK"/>
+                            <constraint firstItem="hmL-Eh-kxk" firstAttribute="leading" secondItem="8LG-PR-DDF" secondAttribute="trailing" id="xUx-cm-z9x"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="ooC-5E-aN5"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="rZB-ea-s0h" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-268.1159420289855" y="-17.410714285714285"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="JyH-zP-V69">
+            <objects>
+                <viewController id="mSV-xS-Y9q" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="4wg-2G-j91">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iuL-3W-ZeW">
+                                <rect key="frame" x="0.0" y="57" width="414" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Title" id="a8v-QI-FwH"/>
+                                </items>
+                            </navigationBar>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YoA-7M-G03">
+                                <rect key="frame" x="140" y="191" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DFm-k9-hWP">
+                                <rect key="frame" x="258" y="191" width="46" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Button"/>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="622-Dg-iTB"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7U-ge-HId" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="425" y="-17"/>
+        </scene>
+    </scenes>
+</document>

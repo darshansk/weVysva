@@ -17,6 +17,8 @@
 		A3DED2F59F8537F940AFE1D7 /* Pods_weVysya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABE6C34A15EB54EE78122C9 /* Pods_weVysya.framework */; };
 		E76BBF0D235F29F100A01B2A /* Links.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBF0C235F29F100A01B2A /* Links.storyboard */; };
 		E76BBF12235F316300A01B2A /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BBF11235F316300A01B2A /* LinkViewController.swift */; };
+		E76BBF15235F3F1900A01B2A /* Deals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBF14235F3F1900A01B2A /* Deals.storyboard */; };
+		E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BADB3F235F44880041E27E /* MyLinksViewController.swift */; };
 		E7EAF9CB2357188800811006 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EAF9CA2357188800811006 /* CardView.swift */; };
 		ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F17A32355B138006CB5A7 /* Extensions.swift */; };
 		ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F17A52355B21F006CB5A7 /* Theme.swift */; };
@@ -41,6 +43,8 @@
 		B13C11639131DF606B51B738 /* Pods-weVysya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weVysya.release.xcconfig"; path = "Target Support Files/Pods-weVysya/Pods-weVysya.release.xcconfig"; sourceTree = "<group>"; };
 		E76BBF0C235F29F100A01B2A /* Links.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Links.storyboard; sourceTree = "<group>"; };
 		E76BBF11235F316300A01B2A /* LinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
+		E76BBF14235F3F1900A01B2A /* Deals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deals.storyboard; sourceTree = "<group>"; };
+		E7BADB3F235F44880041E27E /* MyLinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLinksViewController.swift; sourceTree = "<group>"; };
 		E7EAF9CA2357188800811006 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ED8F17A32355B138006CB5A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED8F17A52355B21F006CB5A7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -87,8 +91,20 @@
 			isa = PBXGroup;
 			children = (
 				E76BBF11235F316300A01B2A /* LinkViewController.swift */,
+				E7BADB3F235F44880041E27E /* MyLinksViewController.swift */,
 			);
 			path = HomeControllers;
+			sourceTree = "<group>";
+		};
+		E76BBF13235F3E4500A01B2A /* Storyboards */ = {
+			isa = PBXGroup;
+			children = (
+				EDA5982C2354A59300B2EC6D /* Main.storyboard */,
+				EDA598312354A59700B2EC6D /* LaunchScreen.storyboard */,
+				E76BBF0C235F29F100A01B2A /* Links.storyboard */,
+				E76BBF14235F3F1900A01B2A /* Deals.storyboard */,
+			);
+			path = Storyboards;
 			sourceTree = "<group>";
 		};
 		ED8F179A23559B61006CB5A7 /* SideControllers */ = {
@@ -126,15 +142,13 @@
 		EDA598272354A59300B2EC6D /* weVysya */ = {
 			isa = PBXGroup;
 			children = (
+				E76BBF13235F3E4500A01B2A /* Storyboards */,
 				E76BBF10235F30A700A01B2A /* HomeControllers */,
 				ED8F179A23559B61006CB5A7 /* SideControllers */,
 				EDA5983A2354A62B00B2EC6D /* CustomComponents */,
 				EDA598282354A59300B2EC6D /* AppDelegate.swift */,
-				EDA5982C2354A59300B2EC6D /* Main.storyboard */,
 				5C4C5AAB235DE78C00B7A2FD /* Assets.xcassets */,
-				EDA598312354A59700B2EC6D /* LaunchScreen.storyboard */,
 				EDA598342354A59700B2EC6D /* Info.plist */,
-				E76BBF0C235F29F100A01B2A /* Links.storyboard */,
 			);
 			path = weVysya;
 			sourceTree = "<group>";
@@ -212,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E76BBF15235F3F1900A01B2A /* Deals.storyboard in Resources */,
 				E76BBF0D235F29F100A01B2A /* Links.storyboard in Resources */,
 				EDA598332354A59700B2EC6D /* LaunchScreen.storyboard in Resources */,
 				5C4C5AAC235DE78C00B7A2FD /* Assets.xcassets in Resources */,
@@ -275,6 +290,7 @@
 				5C53C111235844D800761BE1 /* HomeViewController.swift in Sources */,
 				5C4D41592359EEC600D9D259 /* MenuViewController.swift in Sources */,
 				EDA598292354A59300B2EC6D /* AppDelegate.swift in Sources */,
+				E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */,
 				5C4C5AA6235DDAE800B7A2FD /* RenewViewController.swift in Sources */,
 				ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */,
 				ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */,
