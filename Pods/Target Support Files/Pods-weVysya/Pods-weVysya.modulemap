@@ -1,0 +1,6 @@
+framework module Pods_weVysya {
+  umbrella header "Pods-weVysya-umbrella.h"
+
+  export *
+  module * { export * }
+}

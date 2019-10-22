@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina6_5" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="main_bg" translatesAutoresizingMaskIntoConstraints="NO" id="p6F-N0-ZIU">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_wevysya" translatesAutoresizingMaskIntoConstraints="NO" id="dEB-9d-4Xb">
+                                <rect key="frame" x="87" y="94" width="240" height="240"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="FMy-kd-a7e"/>
+                                    <constraint firstAttribute="height" constant="240" id="qQG-r4-CuB"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="5" translatesAutoresizingMaskIntoConstraints="NO" id="eQO-Gr-vX1">
+                                <rect key="frame" x="40" y="712" width="334" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="nde-Hn-nVi"/>
+                                </constraints>
+                                <attributedString key="attributedText">
+                                    <fragment content="United we Stand, Divided We Fall">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="TimesNewRomanPS-BoldMT"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="truncatingTail" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailingMargin" secondItem="eQO-Gr-vX1" secondAttribute="trailing" constant="20" id="6al-wJ-vMd"/>
+                            <constraint firstItem="dEB-9d-4Xb" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="EJH-tz-iY9"/>
+                            <constraint firstAttribute="trailing" secondItem="p6F-N0-ZIU" secondAttribute="trailing" id="FMX-bQ-heu"/>
+                            <constraint firstAttribute="bottom" secondItem="p6F-N0-ZIU" secondAttribute="bottom" id="I9G-wm-5h3"/>
+                            <constraint firstItem="p6F-N0-ZIU" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="IQ3-N0-p0f"/>
+                            <constraint firstItem="dEB-9d-4Xb" firstAttribute="centerX" secondItem="Ze5-6b-2t3" secondAttribute="centerX" id="gwz-xP-tWX"/>
+                            <constraint firstItem="eQO-Gr-vX1" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leadingMargin" constant="20" id="j51-ZA-sY8"/>
+                            <constraint firstItem="p6F-N0-ZIU" firstAttribute="leading" secondItem="Ze5-6b-2t3" secondAttribute="leading" id="p5F-Oo-ZLE"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="eQO-Gr-vX1" secondAttribute="bottom" constant="100" id="yoR-M9-dtW"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52.173913043478265" y="375"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="logo_wevysya" width="299.51998901367188" height="275"/>
+        <image name="main_bg" width="1349" height="560"/>
+    </resources>
+</document>
