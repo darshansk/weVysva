@@ -150,21 +150,6 @@
             <point key="canvasLocation" x="2729" y="-83"/>
         </scene>
         <!--View Controller-->
-        <scene sceneID="ewB-Pw-k2I">
-            <objects>
-                <viewController id="H7z-LT-1FQ" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="1zf-WH-0Sc">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="kCh-1Q-SXP"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="NM3-bS-BaC" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3616.8000000000002" y="204.67980295566502"/>
-        </scene>
-        <!--View Controller-->
         <scene sceneID="S0f-ov-rg6">
             <objects>
                 <viewController id="f2u-lU-ZFH" sceneMemberID="viewController">
@@ -324,7 +309,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="3SB-ex-Til">
-                                <rect key="frame" x="-4" y="75" width="379.00000000000045" height="175"/>
+                                <rect key="frame" x="-4" y="75" width="379" height="175"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="175" id="dKj-2i-tA1"/>
                                 </constraints>
@@ -344,6 +329,9 @@
                                         <state key="normal" title="  Links">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="YAF-Is-pF2" kind="presentation" modalPresentationStyle="fullScreen" id="j21-s6-JQh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -624,6 +612,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="De0-ZK-tzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="906" y="132"/>
+        </scene>
+        <!--Links-->
+        <scene sceneID="dP6-wP-Fd8">
+            <objects>
+                <viewControllerPlaceholder storyboardIdentifier="Links" storyboardName="Links" id="YAF-Is-pF2" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="o35-Sq-Fq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1774" y="211"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="mMJ-8m-EWC">
@@ -1096,9 +1092,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <navigationBar contentMode="scaleToFill" fixedFrame="YES" translatesAutoresizingMaskIntoConstraints="NO" id="jEg-BI-9eN">
-                                <rect key="frame" x="0.0" y="44" width="375" height="44"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                            <navigationBar contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="jEg-BI-9eN">
+                                <rect key="frame" x="0.0" y="44" width="375" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="vJe-ae-qe3"/>
+                                </constraints>
                                 <color key="barTintColor" red="0.053416656719999997" green="0.1510478978" blue="0.42825983499999998" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <textAttributes key="titleTextAttributes">
                                     <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -1114,14 +1112,36 @@
                                     </navigationItem>
                                 </items>
                             </navigationBar>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="faq" translatesAutoresizingMaskIntoConstraints="NO" id="W0x-HS-XRY">
+                                <rect key="frame" x="0.0" y="94" width="375" height="150"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="MTj-bV-fn9"/>
+                                </constraints>
+                            </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="fG4-Vp-2rw" customClass="CardView" customModule="weVysya" customModuleProvider="target">
+                                <rect key="frame" x="16" y="259" width="343" height="509"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="W0x-HS-XRY" firstAttribute="leading" secondItem="0QQ-k8-3G6" secondAttribute="leading" id="1av-iN-0QW"/>
+                            <constraint firstItem="jEg-BI-9eN" firstAttribute="top" secondItem="0QQ-k8-3G6" secondAttribute="top" id="TtT-sp-FAL"/>
+                            <constraint firstItem="W0x-HS-XRY" firstAttribute="top" secondItem="jEg-BI-9eN" secondAttribute="bottom" id="g2w-Y6-1ez"/>
+                            <constraint firstItem="jEg-BI-9eN" firstAttribute="leading" secondItem="0QQ-k8-3G6" secondAttribute="leading" id="ggd-gI-EuG"/>
+                            <constraint firstItem="fG4-Vp-2rw" firstAttribute="top" secondItem="W0x-HS-XRY" secondAttribute="bottom" constant="15" id="hES-Hs-ryc"/>
+                            <constraint firstItem="fG4-Vp-2rw" firstAttribute="leading" secondItem="0QQ-k8-3G6" secondAttribute="leading" constant="16" id="nqK-yZ-qUF"/>
+                            <constraint firstItem="jEg-BI-9eN" firstAttribute="trailing" secondItem="0QQ-k8-3G6" secondAttribute="trailing" id="oGc-hl-mrE"/>
+                            <constraint firstItem="0QQ-k8-3G6" firstAttribute="trailing" secondItem="fG4-Vp-2rw" secondAttribute="trailing" constant="16" id="qum-ni-6Ww"/>
+                            <constraint firstAttribute="bottomMargin" secondItem="fG4-Vp-2rw" secondAttribute="bottom" constant="10" id="rF7-0c-VCk"/>
+                            <constraint firstItem="0QQ-k8-3G6" firstAttribute="trailing" secondItem="W0x-HS-XRY" secondAttribute="trailing" id="uz1-Hr-Fnv"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="0QQ-k8-3G6"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCe-y5-eVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="1077"/>
+            <point key="canvasLocation" x="1773.5999999999999" y="1075.8620689655172"/>
         </scene>
         <!--View Controller-->
         <scene sceneID="jzh-PE-yYX">
@@ -1433,12 +1453,13 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bGQ-Bc-L0Q" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773.5999999999999" y="132.26600985221674"/>
+            <point key="canvasLocation" x="3542" y="85"/>
         </scene>
     </scenes>
     <resources>
         <image name="anil" width="270" height="270"/>
         <image name="deal" width="512" height="512"/>
+        <image name="faq" width="410" height="123"/>
         <image name="house_leader" width="512" height="512"/>
         <image name="left-arrow" width="20" height="20"/>
         <image name="link" width="512" height="512"/>
@@ -1452,6 +1473,7 @@
         <image name="wevysya_login_back" width="700" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
+        <segue reference="SDd-X2-T5I"/>
         <segue reference="2gy-E1-eVG"/>
     </inferredMetricsTieBreakers>
 </document>
