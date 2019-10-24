@@ -7,7 +7,8 @@
 //
 
 import UIKit
-
+import Alamofire
+import SwiftyJSON
 class LogInViewController: UIViewController {
 
  
@@ -31,7 +32,52 @@ class LogInViewController: UIViewController {
     }
    
     @IBAction func loginButtonPressed(_ sender: Any) {
-           performSegue(withIdentifier: "homePageSegue", sender: self)
+        
+        signInUser()
+           
     }
+
+    
+    //MARK:- Networking
+    
+    func signInUser(){
+        if userNameTextField.text == "" || passwordTextField.text == "" {
+            self.showToast(message: "Enter Login Details", color: UIColor.gray)
+        }
+        else{
+            self.showSpinner(onView: self.view)
+            let url = URL(string: "https://quickworkz.com/wv/controller/login.php")
+            let parameters: [String: String] = [
+                "email": userNameTextField.text!,
+                "password": passwordTextField.text!,
+                "Phone Number": "",
+                "Device ID": ""
+            ]
+
+            Alamofire.request(url!, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
+                if response.result.isSuccess == true {
+                    self.removeSpinner()
+                    let responseJSON: JSON = JSON(response.result.value!)
+                     if responseJSON["flag"] == "1" {
+                        self.performSegue(withIdentifier: "homePageSegue", sender: self)
+                         print(responseJSON)
+                     }
+                    else{
+                        self.showToast(message : " Wrong Credentials", color: UIColor.gray)
+                    }
+                }
+                else{
+                                       print("SignInError \(String(describing: response.result.error))")
+                                                      self.showToast(message : "Connection Issues", color: UIColor.gray)
+                                }
+                
+            
+          
+        }
+    
+        
+    }
+    
 }
 
+}

@@ -18,6 +18,8 @@
 		E76BBF0D235F29F100A01B2A /* Links.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBF0C235F29F100A01B2A /* Links.storyboard */; };
 		E76BBF12235F316300A01B2A /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BBF11235F316300A01B2A /* LinkViewController.swift */; };
 		E76BBF15235F3F1900A01B2A /* Deals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBF14235F3F1900A01B2A /* Deals.storyboard */; };
+		E7A2B39E23617F66004635B1 /* DetailsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B39C23617F66004635B1 /* DetailsCard.swift */; };
+		E7A2B39F23617F66004635B1 /* DetailsCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A2B39D23617F66004635B1 /* DetailsCard.xib */; };
 		E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BADB3F235F44880041E27E /* MyLinksViewController.swift */; };
 		E7EAF9CB2357188800811006 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EAF9CA2357188800811006 /* CardView.swift */; };
 		ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F17A32355B138006CB5A7 /* Extensions.swift */; };
@@ -44,6 +46,8 @@
 		E76BBF0C235F29F100A01B2A /* Links.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Links.storyboard; sourceTree = "<group>"; };
 		E76BBF11235F316300A01B2A /* LinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
 		E76BBF14235F3F1900A01B2A /* Deals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deals.storyboard; sourceTree = "<group>"; };
+		E7A2B39C23617F66004635B1 /* DetailsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = DetailsCard.swift; path = CustomComponents/DetailsCard.swift; sourceTree = "<group>"; };
+		E7A2B39D23617F66004635B1 /* DetailsCard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = DetailsCard.xib; path = CustomComponents/DetailsCard.xib; sourceTree = "<group>"; };
 		E7BADB3F235F44880041E27E /* MyLinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLinksViewController.swift; sourceTree = "<group>"; };
 		E7EAF9CA2357188800811006 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ED8F17A32355B138006CB5A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -149,6 +153,8 @@
 				EDA598282354A59300B2EC6D /* AppDelegate.swift */,
 				5C4C5AAB235DE78C00B7A2FD /* Assets.xcassets */,
 				EDA598342354A59700B2EC6D /* Info.plist */,
+				E7A2B39C23617F66004635B1 /* DetailsCard.swift */,
+				E7A2B39D23617F66004635B1 /* DetailsCard.xib */,
 			);
 			path = weVysya;
 			sourceTree = "<group>";
@@ -226,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7A2B39F23617F66004635B1 /* DetailsCard.xib in Resources */,
 				E76BBF15235F3F1900A01B2A /* Deals.storyboard in Resources */,
 				E76BBF0D235F29F100A01B2A /* Links.storyboard in Resources */,
 				EDA598332354A59700B2EC6D /* LaunchScreen.storyboard in Resources */,
@@ -295,6 +302,7 @@
 				ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */,
 				ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */,
 				E76BBF12235F316300A01B2A /* LinkViewController.swift in Sources */,
+				E7A2B39E23617F66004635B1 /* DetailsCard.swift in Sources */,
 				E7EAF9CB2357188800811006 /* CardView.swift in Sources */,
 				5C4C5AA4235D807F00B7A2FD /* SlideInTransition.swift in Sources */,
 				5C4C5AA8235DDC5900B7A2FD /* ContactUsViewController.swift in Sources */,

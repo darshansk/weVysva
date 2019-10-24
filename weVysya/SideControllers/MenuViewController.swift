@@ -13,11 +13,12 @@ import UIKit
         case viewLink
         case viewDeal
         case viewOnetoOne
-        case viewSupport
+        case viewVisitors
         case renew
         case contactUs
         case faq
-        case support
+        case visitorRegistration
+        case addMeetingDate
         case logout
         
 }

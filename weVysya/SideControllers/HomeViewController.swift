@@ -44,16 +44,18 @@ class HomeViewController: UIViewController {
             self.performSegue(withIdentifier: "viewDealSegue", sender: self)
         case .viewOnetoOne:
         self.performSegue(withIdentifier: "viewOnetoOneSegue", sender: self)
-        case .viewSupport:
-            self.performSegue(withIdentifier: "viewSupportSegue", sender: self)
+        case .viewVisitors:
+            self.performSegue(withIdentifier: "viewVisitorsSegue", sender: self)
         case .renew:
             self.performSegue(withIdentifier: "renewSegue", sender: self)
         case .contactUs:
             self.performSegue(withIdentifier: "contactUsSegue", sender: self)
         case .faq:
             self.performSegue(withIdentifier: "faqSegue", sender: self)
-        case .support:
-            self.performSegue(withIdentifier: "supportSegue", sender: self)
+        case .visitorRegistration:
+            self.performSegue(withIdentifier: "visitorRegistrationSegue", sender: self)
+        case .addMeetingDate:
+            self.performSegue(withIdentifier: "addMeetingDateSegue", sender: self)
         case .logout:
             self.logOut()
         }
@@ -62,7 +64,7 @@ class HomeViewController: UIViewController {
     func logOut(){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
                    let newViewController = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
-        
+     //   self.modalPresentationStyle(animationController(forPresented: <#T##UIViewController#>, presenting: <#T##UIViewController#>, source: <#T##UIViewController#>)
                            self.present(newViewController, animated: true, completion: nil)
     }
 }

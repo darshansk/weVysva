@@ -6,6 +6,7 @@ target 'weVysya' do
 
   # Pods for weVysya
 	pod 'Alamofire'
+  pod 'SwiftyJSON'
 	pod 'TextFieldEffects'
 
 end
