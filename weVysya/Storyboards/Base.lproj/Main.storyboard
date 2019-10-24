@@ -303,13 +303,13 @@
         <!--Home View Controller-->
         <scene sceneID="0dk-VP-H9n">
             <objects>
-                <viewController id="kce-EZ-Ndl" customClass="HomeViewController" customModule="weVysya" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController restorationIdentifier="homeViewController" storyboardIdentifier="homeViewController" id="kce-EZ-Ndl" customClass="HomeViewController" customModule="weVysya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xeU-Kn-Hs7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="one" translatesAutoresizingMaskIntoConstraints="NO" id="3SB-ex-Til">
-                                <rect key="frame" x="0.0" y="75" width="375.00000000000045" height="177"/>
+                                <rect key="frame" x="0.0" y="75" width="375" height="177"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="177" id="dKj-2i-tA1"/>
                                 </constraints>
@@ -608,6 +608,7 @@
                         <segue destination="VBA-5X-eRy" kind="presentation" identifier="faqSegue" modalPresentationStyle="fullScreen" id="AlV-rf-fTW"/>
                         <segue destination="pGO-Ts-d3J" kind="presentation" identifier="visitorRegistrationSegue" modalPresentationStyle="fullScreen" id="l3H-ak-fRm"/>
                         <segue destination="6Xg-G3-OQN" kind="presentation" identifier="addMeetingDateSegue" modalPresentationStyle="fullScreen" id="vdM-QE-fV8"/>
+                        <segue destination="aug-9H-4rW" kind="show" identifier="sideMenuSegue" id="Egd-7h-nSp"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="De0-ZK-tzd" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -1248,7 +1249,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOM-ad-lUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2564" y="1077"/>
+            <point key="canvasLocation" x="1855" y="299"/>
         </scene>
         <!--Add Meeting Date View Controller-->
         <scene sceneID="qnF-5E-AoS">
@@ -1283,7 +1284,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dc-LN-GpH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3271" y="1076"/>
+            <point key="canvasLocation" x="3282" y="1108"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="yyf-9F-KR6">
@@ -1580,6 +1581,6 @@
         <image name="wevysya_login_back" width="700" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="QWu-Wd-mJs"/>
+        <segue reference="V5m-ly-suu"/>
     </inferredMetricsTieBreakers>
 </document>

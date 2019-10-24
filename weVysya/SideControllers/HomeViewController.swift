@@ -63,9 +63,9 @@ class HomeViewController: UIViewController {
     }
     func logOut(){
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-                   let newViewController = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
-     //   self.modalPresentationStyle(animationController(forPresented: <#T##UIViewController#>, presenting: <#T##UIViewController#>, source: <#T##UIViewController#>)
-                           self.present(newViewController, animated: true, completion: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
+        newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+           self.present(newViewController, animated: true, completion: nil)
     }
 }
 
