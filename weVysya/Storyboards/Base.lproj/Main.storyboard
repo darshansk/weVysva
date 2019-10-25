@@ -114,6 +114,30 @@
             </objects>
             <point key="canvasLocation" x="141.59999999999999" y="133.5832083958021"/>
         </scene>
+        <!--OnetoOne-->
+        <scene sceneID="GKq-wj-k3A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="OnetoOne" id="txT-fZ-JQh" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sVC-jZ-UgM" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="849"/>
+        </scene>
+        <!--MyPerformance-->
+        <scene sceneID="3aw-Fv-d6A">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MyPerformance" id="fJQ-xk-Fah" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FhT-IZ-JKJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="945"/>
+        </scene>
+        <!--MeetingDates-->
+        <scene sceneID="ltM-8b-3W8">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MeetingDates" id="SOL-96-0dF" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="0C6-up-WLW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="22" y="732"/>
+        </scene>
         <!--View Link View Controller-->
         <scene sceneID="8LZ-z0-sDG">
             <objects>
@@ -147,7 +171,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="enR-Ez-Qih" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2729" y="-83"/>
+            <point key="canvasLocation" x="3575" y="-803"/>
         </scene>
         <!--View Deal View Controller-->
         <scene sceneID="S0f-ov-rg6">
@@ -298,12 +322,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="crx-hT-42z" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3137" y="-840"/>
+            <point key="canvasLocation" x="2884" y="-803"/>
         </scene>
         <!--Home View Controller-->
         <scene sceneID="0dk-VP-H9n">
             <objects>
-                <viewController restorationIdentifier="homeViewController" storyboardIdentifier="homeViewController" id="kce-EZ-Ndl" customClass="HomeViewController" customModule="weVysya" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="homeViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="kce-EZ-Ndl" customClass="HomeViewController" customModule="weVysya" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xeU-Kn-Hs7">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -361,6 +385,9 @@
                                         <state key="normal" title="   Deals">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="4hN-wg-J1g" kind="presentation" modalPresentationStyle="fullScreen" id="sZo-2H-yJU"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -419,6 +446,9 @@
                                         <state key="normal" title="             Member List">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="az9-Yz-aqi" kind="presentation" modalPresentationStyle="fullScreen" id="2sX-ze-skh"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -448,6 +478,9 @@
                                         <state key="normal" title="       Meetings">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="SOL-96-0dF" kind="presentation" modalPresentationStyle="fullScreen" id="6FT-c4-6OL"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -478,6 +511,9 @@
                                         <state key="normal" title="               Performance">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="fJQ-xk-Fah" kind="presentation" modalPresentationStyle="fullScreen" id="lOV-xh-Lko"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -507,6 +543,9 @@
                                         <state key="normal" title="             One-To-One">
                                             <color key="titleColor" cocoaTouchSystemColor="darkTextColor"/>
                                         </state>
+                                        <connections>
+                                            <segue destination="txT-fZ-JQh" kind="presentation" modalPresentationStyle="fullScreen" id="GdC-g4-dGD"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -615,13 +654,29 @@
             </objects>
             <point key="canvasLocation" x="904.79999999999995" y="131.52709359605913"/>
         </scene>
+        <!--MemberList-->
+        <scene sceneID="9rG-Yl-hk2">
+            <objects>
+                <viewControllerPlaceholder storyboardName="MemberList" id="az9-Yz-aqi" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fvg-CQ-sWf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1652" y="241"/>
+        </scene>
+        <!--Deals-->
+        <scene sceneID="S4f-z2-dT9">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Deals" id="4hN-wg-J1g" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ipH-Wn-esT" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="21" y="1042"/>
+        </scene>
         <!--Links-->
         <scene sceneID="dP6-wP-Fd8">
             <objects>
                 <viewControllerPlaceholder storyboardIdentifier="Links" storyboardName="Links" id="YAF-Is-pF2" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="o35-Sq-Fq3" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1774" y="211"/>
+            <point key="canvasLocation" x="21" y="608"/>
         </scene>
         <!--Menu View Controller-->
         <scene sceneID="mMJ-8m-EWC">
@@ -1108,7 +1163,7 @@
                 </tableViewCell>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TiI-vD-sIZ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="142" y="1078"/>
+            <point key="canvasLocation" x="3820" y="1076"/>
         </scene>
         <!--Contact Us View Controller-->
         <scene sceneID="raV-JW-0ec">
@@ -1155,7 +1210,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="JoP-bd-7jN" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="904.79999999999995" y="1077.3399014778327"/>
+            <point key="canvasLocation" x="1193" y="1076"/>
         </scene>
         <!--FAQ View Controller-->
         <scene sceneID="b3H-xQ-zg8">
@@ -1214,7 +1269,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rCe-y5-eVH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1773.5999999999999" y="1075.8620689655172"/>
+            <point key="canvasLocation" x="1858" y="1076"/>
         </scene>
         <!--Visitor Registration View Controller-->
         <scene sceneID="jzh-PE-yYX">
@@ -1249,7 +1304,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="YOM-ad-lUa" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1855" y="299"/>
+            <point key="canvasLocation" x="2489" y="1076"/>
         </scene>
         <!--Add Meeting Date View Controller-->
         <scene sceneID="qnF-5E-AoS">
@@ -1284,7 +1339,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="5Dc-LN-GpH" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3282" y="1108"/>
+            <point key="canvasLocation" x="3137" y="1077"/>
         </scene>
         <!--Edit Profile View Controller-->
         <scene sceneID="yyf-9F-KR6">
@@ -1581,6 +1636,7 @@
         <image name="wevysya_login_back" width="700" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="V5m-ly-suu"/>
+        <segue reference="kJv-hd-U1H"/>
+        <segue reference="6vY-pz-mvT"/>
     </inferredMetricsTieBreakers>
 </document>

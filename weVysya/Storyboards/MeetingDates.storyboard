@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="lLy-fY-JbM">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--homeViewController-->
+        <scene sceneID="c4a-Ag-cFz">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="homeViewController" id="Zj7-zh-kRf" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="sAV-j9-kxo" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-440" y="51"/>
+        </scene>
+        <!--Meeting Dates View Controller-->
+        <scene sceneID="2g6-Xw-ukr">
+            <objects>
+                <viewController id="lLy-fY-JbM" customClass="MeetingDatesViewController" customModule="weVysya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LJ4-Ec-uQn">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tPE-mQ-4Po">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="oR2-8h-xc3"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Meeting Dates" id="hOM-8O-4Gf">
+                                        <barButtonItem key="leftBarButtonItem" image="left-arrow" id="A6Z-08-XjV">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="Zj7-zh-kRf" kind="presentation" modalPresentationStyle="fullScreen" id="aKH-vi-BTQ"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="HvW-1Q-qn9">
+                                <rect key="frame" x="0.0" y="94" width="414" height="802"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="tPE-mQ-4Po" firstAttribute="leading" secondItem="YR3-m2-Txz" secondAttribute="leading" id="DIz-5b-Ka0"/>
+                            <constraint firstAttribute="bottom" secondItem="HvW-1Q-qn9" secondAttribute="bottom" id="cEa-Kl-NGy"/>
+                            <constraint firstItem="tPE-mQ-4Po" firstAttribute="top" secondItem="YR3-m2-Txz" secondAttribute="top" id="cLs-Xj-TN4"/>
+                            <constraint firstItem="YR3-m2-Txz" firstAttribute="trailing" secondItem="HvW-1Q-qn9" secondAttribute="trailing" id="dOD-9O-PDZ"/>
+                            <constraint firstItem="HvW-1Q-qn9" firstAttribute="top" secondItem="tPE-mQ-4Po" secondAttribute="bottom" id="f0j-pa-FbW"/>
+                            <constraint firstItem="HvW-1Q-qn9" firstAttribute="leading" secondItem="YR3-m2-Txz" secondAttribute="leading" id="ff7-J4-LKN"/>
+                            <constraint firstItem="tPE-mQ-4Po" firstAttribute="trailing" secondItem="YR3-m2-Txz" secondAttribute="trailing" id="hcl-Hv-SN6"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="YR3-m2-Txz"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="meetingDatesTableView" destination="HvW-1Q-qn9" id="Fs8-Pn-nwP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bf6-Vo-sfq" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="159" y="96"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left-arrow" width="20" height="20"/>
+    </resources>
+</document>

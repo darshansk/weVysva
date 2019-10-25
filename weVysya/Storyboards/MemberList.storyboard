@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="eMK-ka-jxX">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--homeViewController-->
+        <scene sceneID="RJc-tb-zWY">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="homeViewController" id="3Js-YA-XIk" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AxP-ld-cvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-304" y="-53"/>
+        </scene>
+        <!--Member List View Controller-->
+        <scene sceneID="uBd-MS-STP">
+            <objects>
+                <viewController id="eMK-ka-jxX" customClass="MemberListViewController" customModule="weVysya" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="q1p-Al-Wrp">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DUJ-07-W6e">
+                                <rect key="frame" x="0.0" y="34" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="qIe-r7-jUa"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Member List" id="CV0-RO-Noo">
+                                        <barButtonItem key="leftBarButtonItem" image="left-arrow" id="FnJ-qQ-Ccj">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="3Js-YA-XIk" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="3wE-mg-84Z"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="PEe-IV-W17">
+                                <rect key="frame" x="0.0" y="166.5" width="414" height="695.5"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                            </tableView>
+                            <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="uG6-zC-Fn8" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="20" y="104" width="374" height="42.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="DUJ-07-W6e" firstAttribute="trailing" secondItem="kb7-Ot-qhy" secondAttribute="trailing" id="4pS-yN-ngr"/>
+                            <constraint firstItem="DUJ-07-W6e" firstAttribute="top" secondItem="kb7-Ot-qhy" secondAttribute="top" constant="-10" id="7wy-ke-h1U"/>
+                            <constraint firstItem="uG6-zC-Fn8" firstAttribute="leading" secondItem="kb7-Ot-qhy" secondAttribute="leading" constant="20" id="B5p-dd-gub"/>
+                            <constraint firstItem="kb7-Ot-qhy" firstAttribute="bottom" secondItem="PEe-IV-W17" secondAttribute="bottom" id="DGY-i0-jyZ"/>
+                            <constraint firstItem="kb7-Ot-qhy" firstAttribute="trailing" secondItem="uG6-zC-Fn8" secondAttribute="trailing" constant="20" id="NtI-xD-oKn"/>
+                            <constraint firstItem="DUJ-07-W6e" firstAttribute="leading" secondItem="kb7-Ot-qhy" secondAttribute="leading" id="Q7M-BM-Reu"/>
+                            <constraint firstItem="PEe-IV-W17" firstAttribute="top" secondItem="uG6-zC-Fn8" secondAttribute="bottom" constant="20" id="XaF-bu-Gpn"/>
+                            <constraint firstItem="PEe-IV-W17" firstAttribute="leading" secondItem="kb7-Ot-qhy" secondAttribute="leading" id="eRq-wd-QVb"/>
+                            <constraint firstItem="kb7-Ot-qhy" firstAttribute="trailing" secondItem="PEe-IV-W17" secondAttribute="trailing" id="gCk-ca-XfR"/>
+                            <constraint firstItem="uG6-zC-Fn8" firstAttribute="top" secondItem="DUJ-07-W6e" secondAttribute="bottom" constant="20" id="qAd-sg-SAK"/>
+                            <constraint firstItem="PEe-IV-W17" firstAttribute="height" secondItem="kb7-Ot-qhy" secondAttribute="height" multiplier="0.85" id="wkx-UV-vYi"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="kb7-Ot-qhy"/>
+                    </view>
+                    <connections>
+                        <outlet property="memberListTableView" destination="PEe-IV-W17" id="6Uw-6w-aW1"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="PVB-GP-jLP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="186" y="15"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="left-arrow" width="20" height="20"/>
+    </resources>
+</document>

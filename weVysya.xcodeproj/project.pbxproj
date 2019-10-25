@@ -18,8 +18,24 @@
 		E76BBF0D235F29F100A01B2A /* Links.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBF0C235F29F100A01B2A /* Links.storyboard */; };
 		E76BBF12235F316300A01B2A /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BBF11235F316300A01B2A /* LinkViewController.swift */; };
 		E76BBF15235F3F1900A01B2A /* Deals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBF14235F3F1900A01B2A /* Deals.storyboard */; };
+		E77707432362BA6B00095CF6 /* OneToOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77707412362BA6B00095CF6 /* OneToOneCell.xib */; };
+		E77707442362BA6B00095CF6 /* OneToOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77707422362BA6B00095CF6 /* OneToOneCell.swift */; };
+		E77707462362BC7500095CF6 /* MyDealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77707452362BC7500095CF6 /* MyDealsViewController.swift */; };
+		E777074A2362BDCA00095CF6 /* MeetingDates.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77707492362BDCA00095CF6 /* MeetingDates.storyboard */; };
+		E777074C2362BF7600095CF6 /* MeetingDatesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777074B2362BF7600095CF6 /* MeetingDatesViewController.swift */; };
+		E777074F2362C13D00095CF6 /* MeetingDatesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E777074D2362C13D00095CF6 /* MeetingDatesCell.xib */; };
+		E77707502362C13D00095CF6 /* MeetingDatesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777074E2362C13D00095CF6 /* MeetingDatesCell.swift */; };
+		E77707522362C23700095CF6 /* MyPerformance.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77707512362C23700095CF6 /* MyPerformance.storyboard */; };
+		E77707552362C85300095CF6 /* DealsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77707532362C85300095CF6 /* DealsCell.swift */; };
+		E77707562362C85300095CF6 /* DealsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77707542362C85300095CF6 /* DealsCell.xib */; };
+		E77707582362D44600095CF6 /* MemberList.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E77707572362D44600095CF6 /* MemberList.storyboard */; };
+		E777075A2362D58800095CF6 /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77707592362D58800095CF6 /* MemberListViewController.swift */; };
+		E777075D2362D81900095CF6 /* MemberListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777075B2362D81800095CF6 /* MemberListCell.swift */; };
+		E777075E2362D81900095CF6 /* MemberListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E777075C2362D81900095CF6 /* MemberListCell.xib */; };
 		E7A2B3A22361B21F004635B1 /* LinksCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A2B3A02361B21F004635B1 /* LinksCard.xib */; };
 		E7A2B3A32361B21F004635B1 /* LinksCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B3A12361B21F004635B1 /* LinksCard.swift */; };
+		E7A2B3A62361D7AA004635B1 /* MyOneToOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */; };
+		E7A2B3A82361D867004635B1 /* OnetoOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A2B3A72361D867004635B1 /* OnetoOne.storyboard */; };
 		E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BADB3F235F44880041E27E /* MyLinksViewController.swift */; };
 		E7EAF9CB2357188800811006 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EAF9CA2357188800811006 /* CardView.swift */; };
 		ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F17A32355B138006CB5A7 /* Extensions.swift */; };
@@ -46,8 +62,24 @@
 		E76BBF0C235F29F100A01B2A /* Links.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Links.storyboard; sourceTree = "<group>"; };
 		E76BBF11235F316300A01B2A /* LinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
 		E76BBF14235F3F1900A01B2A /* Deals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deals.storyboard; sourceTree = "<group>"; };
+		E77707412362BA6B00095CF6 /* OneToOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneToOneCell.xib; sourceTree = "<group>"; };
+		E77707422362BA6B00095CF6 /* OneToOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneToOneCell.swift; sourceTree = "<group>"; };
+		E77707452362BC7500095CF6 /* MyDealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDealsViewController.swift; sourceTree = "<group>"; };
+		E77707492362BDCA00095CF6 /* MeetingDates.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MeetingDates.storyboard; sourceTree = "<group>"; };
+		E777074B2362BF7600095CF6 /* MeetingDatesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingDatesViewController.swift; sourceTree = "<group>"; };
+		E777074D2362C13D00095CF6 /* MeetingDatesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MeetingDatesCell.xib; sourceTree = "<group>"; };
+		E777074E2362C13D00095CF6 /* MeetingDatesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MeetingDatesCell.swift; sourceTree = "<group>"; };
+		E77707512362C23700095CF6 /* MyPerformance.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MyPerformance.storyboard; sourceTree = "<group>"; };
+		E77707532362C85300095CF6 /* DealsCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DealsCell.swift; sourceTree = "<group>"; };
+		E77707542362C85300095CF6 /* DealsCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DealsCell.xib; sourceTree = "<group>"; };
+		E77707572362D44600095CF6 /* MemberList.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MemberList.storyboard; sourceTree = "<group>"; };
+		E77707592362D58800095CF6 /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
+		E777075B2362D81800095CF6 /* MemberListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberListCell.swift; sourceTree = "<group>"; };
+		E777075C2362D81900095CF6 /* MemberListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberListCell.xib; sourceTree = "<group>"; };
 		E7A2B3A02361B21F004635B1 /* LinksCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinksCard.xib; sourceTree = "<group>"; };
 		E7A2B3A12361B21F004635B1 /* LinksCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinksCard.swift; sourceTree = "<group>"; };
+		E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOneToOneViewController.swift; sourceTree = "<group>"; };
+		E7A2B3A72361D867004635B1 /* OnetoOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnetoOne.storyboard; sourceTree = "<group>"; };
 		E7BADB3F235F44880041E27E /* MyLinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLinksViewController.swift; sourceTree = "<group>"; };
 		E7EAF9CA2357188800811006 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ED8F17A32355B138006CB5A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
@@ -96,6 +128,10 @@
 			children = (
 				E76BBF11235F316300A01B2A /* LinkViewController.swift */,
 				E7BADB3F235F44880041E27E /* MyLinksViewController.swift */,
+				E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */,
+				E77707452362BC7500095CF6 /* MyDealsViewController.swift */,
+				E777074B2362BF7600095CF6 /* MeetingDatesViewController.swift */,
+				E77707592362D58800095CF6 /* MemberListViewController.swift */,
 			);
 			path = HomeControllers;
 			sourceTree = "<group>";
@@ -107,6 +143,10 @@
 				EDA598312354A59700B2EC6D /* LaunchScreen.storyboard */,
 				E76BBF0C235F29F100A01B2A /* Links.storyboard */,
 				E76BBF14235F3F1900A01B2A /* Deals.storyboard */,
+				E7A2B3A72361D867004635B1 /* OnetoOne.storyboard */,
+				E77707492362BDCA00095CF6 /* MeetingDates.storyboard */,
+				E77707512362C23700095CF6 /* MyPerformance.storyboard */,
+				E77707572362D44600095CF6 /* MemberList.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -114,8 +154,16 @@
 		E7A2B3A42361C9A3004635B1 /* CustomCards */ = {
 			isa = PBXGroup;
 			children = (
+				E777075B2362D81800095CF6 /* MemberListCell.swift */,
+				E777075C2362D81900095CF6 /* MemberListCell.xib */,
+				E77707422362BA6B00095CF6 /* OneToOneCell.swift */,
+				E77707412362BA6B00095CF6 /* OneToOneCell.xib */,
 				E7A2B3A12361B21F004635B1 /* LinksCard.swift */,
 				E7A2B3A02361B21F004635B1 /* LinksCard.xib */,
+				E777074E2362C13D00095CF6 /* MeetingDatesCell.swift */,
+				E777074D2362C13D00095CF6 /* MeetingDatesCell.xib */,
+				E77707532362C85300095CF6 /* DealsCell.swift */,
+				E77707542362C85300095CF6 /* DealsCell.xib */,
 			);
 			path = CustomCards;
 			sourceTree = "<group>";
@@ -213,7 +261,7 @@
 				TargetAttributes = {
 					EDA598242354A59300B2EC6D = {
 						CreatedOnToolsVersion = 10.1;
-						LastSwiftMigration = 1110;
+						LastSwiftMigration = 1100;
 					};
 				};
 			};
@@ -240,11 +288,19 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E77707432362BA6B00095CF6 /* OneToOneCell.xib in Resources */,
+				E777075E2362D81900095CF6 /* MemberListCell.xib in Resources */,
 				E7A2B3A22361B21F004635B1 /* LinksCard.xib in Resources */,
 				E76BBF15235F3F1900A01B2A /* Deals.storyboard in Resources */,
 				E76BBF0D235F29F100A01B2A /* Links.storyboard in Resources */,
+				E77707522362C23700095CF6 /* MyPerformance.storyboard in Resources */,
 				EDA598332354A59700B2EC6D /* LaunchScreen.storyboard in Resources */,
 				5C4C5AAC235DE78C00B7A2FD /* Assets.xcassets in Resources */,
+				E77707562362C85300095CF6 /* DealsCell.xib in Resources */,
+				E777074A2362BDCA00095CF6 /* MeetingDates.storyboard in Resources */,
+				E777074F2362C13D00095CF6 /* MeetingDatesCell.xib in Resources */,
+				E77707582362D44600095CF6 /* MemberList.storyboard in Resources */,
+				E7A2B3A82361D867004635B1 /* OnetoOne.storyboard in Resources */,
 				EDA5982E2354A59300B2EC6D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -302,10 +358,15 @@
 				EDA5983E2354A62B00B2EC6D /* DButton.swift in Sources */,
 				EDA5983D2354A62B00B2EC6D /* DTextField.swift in Sources */,
 				EDA5982B2354A59300B2EC6D /* LogInViewController.swift in Sources */,
+				E777074C2362BF7600095CF6 /* MeetingDatesViewController.swift in Sources */,
+				E777075A2362D58800095CF6 /* MemberListViewController.swift in Sources */,
 				5C53C111235844D800761BE1 /* HomeViewController.swift in Sources */,
 				5C4D41592359EEC600D9D259 /* MenuViewController.swift in Sources */,
 				EDA598292354A59300B2EC6D /* AppDelegate.swift in Sources */,
 				E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */,
+				E77707442362BA6B00095CF6 /* OneToOneCell.swift in Sources */,
+				E777075D2362D81900095CF6 /* MemberListCell.swift in Sources */,
+				E77707502362C13D00095CF6 /* MeetingDatesCell.swift in Sources */,
 				5C4C5AA6235DDAE800B7A2FD /* RenewViewController.swift in Sources */,
 				ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */,
 				ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */,
@@ -313,6 +374,9 @@
 				E7A2B3A32361B21F004635B1 /* LinksCard.swift in Sources */,
 				E7EAF9CB2357188800811006 /* CardView.swift in Sources */,
 				5C4C5AA4235D807F00B7A2FD /* SlideInTransition.swift in Sources */,
+				E77707462362BC7500095CF6 /* MyDealsViewController.swift in Sources */,
+				E77707552362C85300095CF6 /* DealsCell.swift in Sources */,
+				E7A2B3A62361D7AA004635B1 /* MyOneToOneViewController.swift in Sources */,
 				5C4C5AA8235DDC5900B7A2FD /* ContactUsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -471,7 +535,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "weVysya/SideControllers/weVysya-Bridging-Header.h";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
@@ -491,7 +555,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.centura.technologies.weVysya;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_OBJC_BRIDGING_HEADER = "weVysya/SideControllers/weVysya-Bridging-Header.h";
-				SWIFT_VERSION = 4.2;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;

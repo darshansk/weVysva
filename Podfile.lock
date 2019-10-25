@@ -1,24 +1,28 @@
 PODS:
   - Alamofire (4.9.0)
+  - iOSDropDown (0.3.4)
   - SwiftyJSON (5.0.0)
   - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
   - Alamofire
+  - iOSDropDown
   - SwiftyJSON
   - TextFieldEffects
 
 SPEC REPOS:
   trunk:
     - Alamofire
+    - iOSDropDown
     - SwiftyJSON
     - TextFieldEffects
 
 SPEC CHECKSUMS:
   Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 7834ef3da54124e0e442ca5aa738941884a720fb
+PODFILE CHECKSUM: 76ec1c9a18b0efd7a00bd2fa2b4b44fbf42794c3
 
 COCOAPODS: 1.8.3

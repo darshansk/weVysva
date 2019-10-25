@@ -8,5 +8,6 @@ target 'weVysya' do
 	pod 'Alamofire'
   pod 'SwiftyJSON'
 	pod 'TextFieldEffects'
+  pod 'iOSDropDown'
 
 end
