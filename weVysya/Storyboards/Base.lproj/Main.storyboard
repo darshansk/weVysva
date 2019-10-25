@@ -1636,7 +1636,6 @@
         <image name="wevysya_login_back" width="700" height="224"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="kJv-hd-U1H"/>
         <segue reference="6vY-pz-mvT"/>
     </inferredMetricsTieBreakers>
 </document>
