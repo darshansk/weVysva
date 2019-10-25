@@ -32,6 +32,10 @@
 		E777075A2362D58800095CF6 /* MemberListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77707592362D58800095CF6 /* MemberListViewController.swift */; };
 		E777075D2362D81900095CF6 /* MemberListCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777075B2362D81800095CF6 /* MemberListCell.swift */; };
 		E777075E2362D81900095CF6 /* MemberListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E777075C2362D81900095CF6 /* MemberListCell.xib */; };
+		E77707602362F47B00095CF6 /* LinksPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777075F2362F47B00095CF6 /* LinksPopUpViewController.swift */; };
+		E7770762236314AB00095CF6 /* DealsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7770761236314AB00095CF6 /* DealsPopUpViewController.swift */; };
+		E7770764236314C700095CF6 /* OneToOnePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7770763236314C700095CF6 /* OneToOnePopUpViewController.swift */; };
+		E7770766236316AE00095CF6 /* MemberListPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7770765236316AE00095CF6 /* MemberListPopUpViewController.swift */; };
 		E7A2B3A22361B21F004635B1 /* LinksCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A2B3A02361B21F004635B1 /* LinksCard.xib */; };
 		E7A2B3A32361B21F004635B1 /* LinksCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B3A12361B21F004635B1 /* LinksCard.swift */; };
 		E7A2B3A62361D7AA004635B1 /* MyOneToOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */; };
@@ -76,6 +80,10 @@
 		E77707592362D58800095CF6 /* MemberListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListViewController.swift; sourceTree = "<group>"; };
 		E777075B2362D81800095CF6 /* MemberListCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MemberListCell.swift; sourceTree = "<group>"; };
 		E777075C2362D81900095CF6 /* MemberListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = MemberListCell.xib; sourceTree = "<group>"; };
+		E777075F2362F47B00095CF6 /* LinksPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinksPopUpViewController.swift; sourceTree = "<group>"; };
+		E7770761236314AB00095CF6 /* DealsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsPopUpViewController.swift; sourceTree = "<group>"; };
+		E7770763236314C700095CF6 /* OneToOnePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOnePopUpViewController.swift; sourceTree = "<group>"; };
+		E7770765236316AE00095CF6 /* MemberListPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListPopUpViewController.swift; sourceTree = "<group>"; };
 		E7A2B3A02361B21F004635B1 /* LinksCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinksCard.xib; sourceTree = "<group>"; };
 		E7A2B3A12361B21F004635B1 /* LinksCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinksCard.swift; sourceTree = "<group>"; };
 		E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOneToOneViewController.swift; sourceTree = "<group>"; };
@@ -132,6 +140,10 @@
 				E77707452362BC7500095CF6 /* MyDealsViewController.swift */,
 				E777074B2362BF7600095CF6 /* MeetingDatesViewController.swift */,
 				E77707592362D58800095CF6 /* MemberListViewController.swift */,
+				E777075F2362F47B00095CF6 /* LinksPopUpViewController.swift */,
+				E7770761236314AB00095CF6 /* DealsPopUpViewController.swift */,
+				E7770763236314C700095CF6 /* OneToOnePopUpViewController.swift */,
+				E7770765236316AE00095CF6 /* MemberListPopUpViewController.swift */,
 			);
 			path = HomeControllers;
 			sourceTree = "<group>";
@@ -357,17 +369,21 @@
 				5C4C5AAA235DE0D700B7A2FD /* EditProfileViewController.swift in Sources */,
 				EDA5983E2354A62B00B2EC6D /* DButton.swift in Sources */,
 				EDA5983D2354A62B00B2EC6D /* DTextField.swift in Sources */,
+				E7770762236314AB00095CF6 /* DealsPopUpViewController.swift in Sources */,
 				EDA5982B2354A59300B2EC6D /* LogInViewController.swift in Sources */,
 				E777074C2362BF7600095CF6 /* MeetingDatesViewController.swift in Sources */,
 				E777075A2362D58800095CF6 /* MemberListViewController.swift in Sources */,
 				5C53C111235844D800761BE1 /* HomeViewController.swift in Sources */,
 				5C4D41592359EEC600D9D259 /* MenuViewController.swift in Sources */,
+				E7770764236314C700095CF6 /* OneToOnePopUpViewController.swift in Sources */,
 				EDA598292354A59300B2EC6D /* AppDelegate.swift in Sources */,
 				E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */,
+				E77707602362F47B00095CF6 /* LinksPopUpViewController.swift in Sources */,
 				E77707442362BA6B00095CF6 /* OneToOneCell.swift in Sources */,
 				E777075D2362D81900095CF6 /* MemberListCell.swift in Sources */,
 				E77707502362C13D00095CF6 /* MeetingDatesCell.swift in Sources */,
 				5C4C5AA6235DDAE800B7A2FD /* RenewViewController.swift in Sources */,
+				E7770766236316AE00095CF6 /* MemberListPopUpViewController.swift in Sources */,
 				ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */,
 				ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */,
 				E76BBF12235F316300A01B2A /* LinkViewController.swift in Sources */,
