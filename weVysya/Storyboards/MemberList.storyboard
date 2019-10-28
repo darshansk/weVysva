@@ -14,7 +14,7 @@
                 <viewControllerPlaceholder storyboardName="Main" referencedIdentifier="homeViewController" id="3Js-YA-XIk" sceneMemberID="viewController"/>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AxP-ld-cvy" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-304" y="-53"/>
+            <point key="canvasLocation" x="569" y="-403"/>
         </scene>
         <!--Member List View Controller-->
         <scene sceneID="uBd-MS-STP">
@@ -79,7 +79,114 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PVB-GP-jLP" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="186" y="15"/>
+            <point key="canvasLocation" x="245" y="15"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="TwJ-Qn-Q7Q">
+            <objects>
+                <viewController storyboardIdentifier="vistorRegistrationViewController" useStoryboardIdentifierAsRestorationIdentifier="YES" id="e7R-2f-bmq" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Raz-Hz-jQ3">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <navigationBar contentMode="scaleToFill" translucent="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BsX-tP-Pfn">
+                                <rect key="frame" x="0.0" y="44" width="414" height="50"/>
+                                <color key="backgroundColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="Lhk-fZ-Wbi"/>
+                                </constraints>
+                                <color key="barTintColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <textAttributes key="titleTextAttributes">
+                                    <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </textAttributes>
+                                <items>
+                                    <navigationItem title="Visitor Registration" id="FOW-WP-D9Q">
+                                        <barButtonItem key="leftBarButtonItem" image="left-arrow" id="Xe1-u1-h5C">
+                                            <color key="tintColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                            <connections>
+                                                <segue destination="3Js-YA-XIk" kind="presentation" modalPresentationStyle="fullScreen" id="3Es-7D-Eng"/>
+                                            </connections>
+                                        </barButtonItem>
+                                    </navigationItem>
+                                </items>
+                            </navigationBar>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="UserName" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="1i9-1v-Kua">
+                                <rect key="frame" x="20" y="156" width="339" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qF9-JL-CpL">
+                                <rect key="frame" x="20" y="225" width="339" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Submit">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="5LS-Rd-9lp">
+                                <rect key="frame" x="20" y="293" width="339" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Phone Number" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="554-Gl-yJE">
+                                <rect key="frame" x="20" y="351" width="339" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Business Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMI-qc-Ctu">
+                                <rect key="frame" x="20" y="431" width="339" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Invited By" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="T3j-JX-cxB" customClass="DropDown" customModule="iOSDropDown">
+                                <rect key="frame" x="38" y="625" width="339" height="34"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OmL-vO-MvQ">
+                                <rect key="frame" x="20" y="514" width="339" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Select House">
+                                    <color key="titleColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <connections>
+                                    <segue destination="Q8d-Tw-alD" kind="presentation" modalPresentationStyle="fullScreen" modalTransitionStyle="crossDissolve" id="VqR-RB-qh0"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FCk-Sn-uWm">
+                                <rect key="frame" x="20" y="702" width="156" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Reject">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ng6-UF-BEm">
+                                <rect key="frame" x="247" y="702" width="130" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.1454375386" green="0.2105090916" blue="0.40978503230000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Accept">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="BsX-tP-Pfn" firstAttribute="top" secondItem="PSy-bT-ZuA" secondAttribute="top" id="0zG-Yo-Xjl"/>
+                            <constraint firstItem="BsX-tP-Pfn" firstAttribute="leading" secondItem="PSy-bT-ZuA" secondAttribute="leading" id="LG8-k3-ZKo"/>
+                            <constraint firstItem="BsX-tP-Pfn" firstAttribute="trailing" secondItem="PSy-bT-ZuA" secondAttribute="trailing" id="mUl-Rc-AQc"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="PSy-bT-ZuA"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FXX-xc-BAG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1105.7971014492755" y="14.732142857142856"/>
         </scene>
         <!--Member List Pop Up View Controller-->
         <scene sceneID="iyF-tu-adx">
@@ -239,4 +346,8 @@
     <resources>
         <image name="left-arrow" width="20" height="20"/>
     </resources>
+    <inferredMetricsTieBreakers>
+        <segue reference="VqR-RB-qh0"/>
+        <segue reference="3Es-7D-Eng"/>
+    </inferredMetricsTieBreakers>
 </document>

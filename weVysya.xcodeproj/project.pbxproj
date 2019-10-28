@@ -36,11 +36,24 @@
 		E7770762236314AB00095CF6 /* DealsPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7770761236314AB00095CF6 /* DealsPopUpViewController.swift */; };
 		E7770764236314C700095CF6 /* OneToOnePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7770763236314C700095CF6 /* OneToOnePopUpViewController.swift */; };
 		E7770766236316AE00095CF6 /* MemberListPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7770765236316AE00095CF6 /* MemberListPopUpViewController.swift */; };
+		E777076823631BED00095CF6 /* Houses.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E777076723631BED00095CF6 /* Houses.storyboard */; };
+		E777076A23631F0F00095CF6 /* HouseViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777076923631F0F00095CF6 /* HouseViewController.swift */; };
+		E777076C23631F2B00095CF6 /* HousePopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777076B23631F2B00095CF6 /* HousePopUpViewController.swift */; };
+		E777076F23632BDB00095CF6 /* HousesCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E777076D23632BDA00095CF6 /* HousesCell.swift */; };
+		E777077023632BDB00095CF6 /* HousesCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E777076E23632BDB00095CF6 /* HousesCell.xib */; };
 		E7A2B3A22361B21F004635B1 /* LinksCard.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7A2B3A02361B21F004635B1 /* LinksCard.xib */; };
 		E7A2B3A32361B21F004635B1 /* LinksCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B3A12361B21F004635B1 /* LinksCard.swift */; };
 		E7A2B3A62361D7AA004635B1 /* MyOneToOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */; };
 		E7A2B3A82361D867004635B1 /* OnetoOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A2B3A72361D867004635B1 /* OnetoOne.storyboard */; };
 		E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BADB3F235F44880041E27E /* MyLinksViewController.swift */; };
+		E7D7AF862366BD10006A89C5 /* ViewDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF842366BD10006A89C5 /* ViewDetailsCell.swift */; };
+		E7D7AF872366BD10006A89C5 /* ViewDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D7AF852366BD10006A89C5 /* ViewDetailsCell.xib */; };
+		E7D7AF892366C010006A89C5 /* ViewLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF882366C010006A89C5 /* ViewLinksViewController.swift */; };
+		E7D7AF8B2366C461006A89C5 /* ViewDealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF8A2366C461006A89C5 /* ViewDealsViewController.swift */; };
+		E7D7AF8D2366C568006A89C5 /* ViewOneToOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF8C2366C568006A89C5 /* ViewOneToOneViewController.swift */; };
+		E7D7AF8F2366CE16006A89C5 /* AddMeetingDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF8E2366CE15006A89C5 /* AddMeetingDateViewController.swift */; };
+		E7D7AF912366E750006A89C5 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF902366E750006A89C5 /* FAQViewController.swift */; };
+		E7D7AF93236700EE006A89C5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF92236700EE006A89C5 /* User.swift */; };
 		E7EAF9CB2357188800811006 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EAF9CA2357188800811006 /* CardView.swift */; };
 		ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F17A32355B138006CB5A7 /* Extensions.swift */; };
 		ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F17A52355B21F006CB5A7 /* Theme.swift */; };
@@ -84,11 +97,24 @@
 		E7770761236314AB00095CF6 /* DealsPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealsPopUpViewController.swift; sourceTree = "<group>"; };
 		E7770763236314C700095CF6 /* OneToOnePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOnePopUpViewController.swift; sourceTree = "<group>"; };
 		E7770765236316AE00095CF6 /* MemberListPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MemberListPopUpViewController.swift; sourceTree = "<group>"; };
+		E777076723631BED00095CF6 /* Houses.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Houses.storyboard; sourceTree = "<group>"; };
+		E777076923631F0F00095CF6 /* HouseViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HouseViewController.swift; sourceTree = "<group>"; };
+		E777076B23631F2B00095CF6 /* HousePopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HousePopUpViewController.swift; sourceTree = "<group>"; };
+		E777076D23632BDA00095CF6 /* HousesCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HousesCell.swift; sourceTree = "<group>"; };
+		E777076E23632BDB00095CF6 /* HousesCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = HousesCell.xib; sourceTree = "<group>"; };
 		E7A2B3A02361B21F004635B1 /* LinksCard.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = LinksCard.xib; sourceTree = "<group>"; };
 		E7A2B3A12361B21F004635B1 /* LinksCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinksCard.swift; sourceTree = "<group>"; };
 		E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOneToOneViewController.swift; sourceTree = "<group>"; };
 		E7A2B3A72361D867004635B1 /* OnetoOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnetoOne.storyboard; sourceTree = "<group>"; };
 		E7BADB3F235F44880041E27E /* MyLinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLinksViewController.swift; sourceTree = "<group>"; };
+		E7D7AF842366BD10006A89C5 /* ViewDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailsCell.swift; sourceTree = "<group>"; };
+		E7D7AF852366BD10006A89C5 /* ViewDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewDetailsCell.xib; sourceTree = "<group>"; };
+		E7D7AF882366C010006A89C5 /* ViewLinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewLinksViewController.swift; sourceTree = "<group>"; };
+		E7D7AF8A2366C461006A89C5 /* ViewDealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDealsViewController.swift; sourceTree = "<group>"; };
+		E7D7AF8C2366C568006A89C5 /* ViewOneToOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOneToOneViewController.swift; sourceTree = "<group>"; };
+		E7D7AF8E2366CE15006A89C5 /* AddMeetingDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetingDateViewController.swift; sourceTree = "<group>"; };
+		E7D7AF902366E750006A89C5 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
+		E7D7AF92236700EE006A89C5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E7EAF9CA2357188800811006 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ED8F17A32355B138006CB5A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED8F17A52355B21F006CB5A7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -144,6 +170,8 @@
 				E7770761236314AB00095CF6 /* DealsPopUpViewController.swift */,
 				E7770763236314C700095CF6 /* OneToOnePopUpViewController.swift */,
 				E7770765236316AE00095CF6 /* MemberListPopUpViewController.swift */,
+				E777076923631F0F00095CF6 /* HouseViewController.swift */,
+				E777076B23631F2B00095CF6 /* HousePopUpViewController.swift */,
 			);
 			path = HomeControllers;
 			sourceTree = "<group>";
@@ -159,6 +187,7 @@
 				E77707492362BDCA00095CF6 /* MeetingDates.storyboard */,
 				E77707512362C23700095CF6 /* MyPerformance.storyboard */,
 				E77707572362D44600095CF6 /* MemberList.storyboard */,
+				E777076723631BED00095CF6 /* Houses.storyboard */,
 			);
 			path = Storyboards;
 			sourceTree = "<group>";
@@ -166,6 +195,8 @@
 		E7A2B3A42361C9A3004635B1 /* CustomCards */ = {
 			isa = PBXGroup;
 			children = (
+				E777076D23632BDA00095CF6 /* HousesCell.swift */,
+				E777076E23632BDB00095CF6 /* HousesCell.xib */,
 				E777075B2362D81800095CF6 /* MemberListCell.swift */,
 				E777075C2362D81900095CF6 /* MemberListCell.xib */,
 				E77707422362BA6B00095CF6 /* OneToOneCell.swift */,
@@ -176,6 +207,8 @@
 				E777074D2362C13D00095CF6 /* MeetingDatesCell.xib */,
 				E77707532362C85300095CF6 /* DealsCell.swift */,
 				E77707542362C85300095CF6 /* DealsCell.xib */,
+				E7D7AF842366BD10006A89C5 /* ViewDetailsCell.swift */,
+				E7D7AF852366BD10006A89C5 /* ViewDetailsCell.xib */,
 			);
 			path = CustomCards;
 			sourceTree = "<group>";
@@ -190,6 +223,11 @@
 				5C4C5AA5235DDAE800B7A2FD /* RenewViewController.swift */,
 				5C4C5AA7235DDC5900B7A2FD /* ContactUsViewController.swift */,
 				5C4C5AA9235DE0D700B7A2FD /* EditProfileViewController.swift */,
+				E7D7AF882366C010006A89C5 /* ViewLinksViewController.swift */,
+				E7D7AF8A2366C461006A89C5 /* ViewDealsViewController.swift */,
+				E7D7AF8C2366C568006A89C5 /* ViewOneToOneViewController.swift */,
+				E7D7AF8E2366CE15006A89C5 /* AddMeetingDateViewController.swift */,
+				E7D7AF902366E750006A89C5 /* FAQViewController.swift */,
 			);
 			path = SideControllers;
 			sourceTree = "<group>";
@@ -223,6 +261,7 @@
 				EDA598282354A59300B2EC6D /* AppDelegate.swift */,
 				5C4C5AAB235DE78C00B7A2FD /* Assets.xcassets */,
 				EDA598342354A59700B2EC6D /* Info.plist */,
+				E7D7AF92236700EE006A89C5 /* User.swift */,
 			);
 			path = weVysya;
 			sourceTree = "<group>";
@@ -301,11 +340,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				E77707432362BA6B00095CF6 /* OneToOneCell.xib in Resources */,
+				E7D7AF872366BD10006A89C5 /* ViewDetailsCell.xib in Resources */,
 				E777075E2362D81900095CF6 /* MemberListCell.xib in Resources */,
 				E7A2B3A22361B21F004635B1 /* LinksCard.xib in Resources */,
 				E76BBF15235F3F1900A01B2A /* Deals.storyboard in Resources */,
 				E76BBF0D235F29F100A01B2A /* Links.storyboard in Resources */,
 				E77707522362C23700095CF6 /* MyPerformance.storyboard in Resources */,
+				E777077023632BDB00095CF6 /* HousesCell.xib in Resources */,
 				EDA598332354A59700B2EC6D /* LaunchScreen.storyboard in Resources */,
 				5C4C5AAC235DE78C00B7A2FD /* Assets.xcassets in Resources */,
 				E77707562362C85300095CF6 /* DealsCell.xib in Resources */,
@@ -314,6 +355,7 @@
 				E77707582362D44600095CF6 /* MemberList.storyboard in Resources */,
 				E7A2B3A82361D867004635B1 /* OnetoOne.storyboard in Resources */,
 				EDA5982E2354A59300B2EC6D /* Main.storyboard in Resources */,
+				E777076823631BED00095CF6 /* Houses.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -366,12 +408,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E7D7AF8F2366CE16006A89C5 /* AddMeetingDateViewController.swift in Sources */,
+				E7D7AF8D2366C568006A89C5 /* ViewOneToOneViewController.swift in Sources */,
 				5C4C5AAA235DE0D700B7A2FD /* EditProfileViewController.swift in Sources */,
 				EDA5983E2354A62B00B2EC6D /* DButton.swift in Sources */,
 				EDA5983D2354A62B00B2EC6D /* DTextField.swift in Sources */,
+				E7D7AF892366C010006A89C5 /* ViewLinksViewController.swift in Sources */,
 				E7770762236314AB00095CF6 /* DealsPopUpViewController.swift in Sources */,
 				EDA5982B2354A59300B2EC6D /* LogInViewController.swift in Sources */,
 				E777074C2362BF7600095CF6 /* MeetingDatesViewController.swift in Sources */,
+				E777076F23632BDB00095CF6 /* HousesCell.swift in Sources */,
 				E777075A2362D58800095CF6 /* MemberListViewController.swift in Sources */,
 				5C53C111235844D800761BE1 /* HomeViewController.swift in Sources */,
 				5C4D41592359EEC600D9D259 /* MenuViewController.swift in Sources */,
@@ -380,15 +426,21 @@
 				E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */,
 				E77707602362F47B00095CF6 /* LinksPopUpViewController.swift in Sources */,
 				E77707442362BA6B00095CF6 /* OneToOneCell.swift in Sources */,
+				E7D7AF93236700EE006A89C5 /* User.swift in Sources */,
 				E777075D2362D81900095CF6 /* MemberListCell.swift in Sources */,
 				E77707502362C13D00095CF6 /* MeetingDatesCell.swift in Sources */,
+				E7D7AF912366E750006A89C5 /* FAQViewController.swift in Sources */,
+				E7D7AF862366BD10006A89C5 /* ViewDetailsCell.swift in Sources */,
 				5C4C5AA6235DDAE800B7A2FD /* RenewViewController.swift in Sources */,
+				E777076A23631F0F00095CF6 /* HouseViewController.swift in Sources */,
 				E7770766236316AE00095CF6 /* MemberListPopUpViewController.swift in Sources */,
 				ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */,
 				ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */,
 				E76BBF12235F316300A01B2A /* LinkViewController.swift in Sources */,
 				E7A2B3A32361B21F004635B1 /* LinksCard.swift in Sources */,
 				E7EAF9CB2357188800811006 /* CardView.swift in Sources */,
+				E7D7AF8B2366C461006A89C5 /* ViewDealsViewController.swift in Sources */,
+				E777076C23631F2B00095CF6 /* HousePopUpViewController.swift in Sources */,
 				5C4C5AA4235D807F00B7A2FD /* SlideInTransition.swift in Sources */,
 				E77707462362BC7500095CF6 /* MyDealsViewController.swift in Sources */,
 				E77707552362C85300095CF6 /* DealsCell.swift in Sources */,

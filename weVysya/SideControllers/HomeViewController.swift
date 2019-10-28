@@ -39,11 +39,11 @@ class HomeViewController: UIViewController {
         case .editProfile:
             self.performSegue(withIdentifier: "editProfileSegue", sender: self)
         case .viewLink:
-            self.performSegue(withIdentifier: "viewLinkSegue", sender: self)
+            viewlinks()
         case .viewDeal:
-            self.performSegue(withIdentifier: "viewDealSegue", sender: self)
+            viewDeals()
         case .viewOnetoOne:
-        self.performSegue(withIdentifier: "viewOnetoOneSegue", sender: self)
+                viewOnetoOne()
         case .viewVisitors:
             self.performSegue(withIdentifier: "viewVisitorsSegue", sender: self)
         case .renew:
@@ -53,20 +53,54 @@ class HomeViewController: UIViewController {
         case .faq:
             self.performSegue(withIdentifier: "faqSegue", sender: self)
         case .visitorRegistration:
-            self.performSegue(withIdentifier: "visitorRegistrationSegue", sender: self)
+            addVisitorView()
         case .addMeetingDate:
-            self.performSegue(withIdentifier: "addMeetingDateSegue", sender: self)
+         meetingDate()
         case .logout:
             self.logOut()
         }
         
     }
+   
+    func addVisitorView(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "MeetingList", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "vistorRegistrationViewController")
+        newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+           self.present(newViewController, animated: true, completion: nil)
+    }
+    func meetingDate(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "MeetingDates", bundle: nil)
+               let newViewController = storyBoard.instantiateViewController(withIdentifier: "addMeetingDateViewController")
+               newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+                  self.present(newViewController, animated: true, completion: nil)
+    }
     func logOut(){
+       
+        UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
         let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
         let newViewController = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
         newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
            self.present(newViewController, animated: true, completion: nil)
     }
+    func viewlinks(){
+           let storyBoard: UIStoryboard = UIStoryboard(name: "Links", bundle: nil)
+           let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewLinksViewController")
+           newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+              self.present(newViewController, animated: true, completion: nil)
+       }
+    func viewDeals(){
+        let storyBoard: UIStoryboard = UIStoryboard(name: "Deals", bundle: nil)
+        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewDealsViewController")
+        newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+           self.present(newViewController, animated: true, completion: nil)
+    }
+    
+    func viewOnetoOne(){
+           let storyBoard: UIStoryboard = UIStoryboard(name: "OnetoOne", bundle: nil)
+           let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewOneToOneViewController")
+           newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+              self.present(newViewController, animated: true, completion: nil)
+       }
 }
 
 

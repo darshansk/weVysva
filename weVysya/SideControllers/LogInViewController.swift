@@ -19,7 +19,7 @@ class LogInViewController: UIViewController {
    
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        directSignIn()
         setUpUI()
     keyboardToggle()
         // Do any additional setup after loading the view, typically from a nib. 34 39 79
@@ -37,7 +37,14 @@ class LogInViewController: UIViewController {
            
     }
 
-    
+    func directSignIn(){
+          if UserDefaults.standard.bool(forKey: "isUserLoggedIn") == true
+          {
+              DispatchQueue.main.async(){
+                  self.performSegue(withIdentifier: "homePageSegue", sender: self)
+              }
+          }
+      }
     //MARK:- Networking
     
     func signInUser(){
@@ -53,14 +60,19 @@ class LogInViewController: UIViewController {
                 "Phone Number": "",
                 "Device ID": ""
             ]
-
+            
             Alamofire.request(url!, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { response in
                 if response.result.isSuccess == true {
                     self.removeSpinner()
                     let responseJSON: JSON = JSON(response.result.value!)
+                      DispatchQueue.main.async(){
+                        self.updateUserData(json: responseJSON)
+                    }
                      if responseJSON["flag"] == "1" {
+                       UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
                         self.performSegue(withIdentifier: "homePageSegue", sender: self)
                          print(responseJSON)
+                        
                      }
                     else{
                         self.showToast(message : " Wrong Credentials", color: UIColor.gray)
@@ -79,5 +91,13 @@ class LogInViewController: UIViewController {
     }
     
 }
+    
+    func updateUserData(json: JSON){
+        
+        
+         
+        let loggedInUser = User.init(age: json["Age"].intValue, isRenewed: json["IsRenewed"].boolValue, isAllowedToAddandViewAttendance: json["IsAllowedToAddandViewAttendance"].boolValue, hubId: json["HubId"].intValue, email: json["Email"].stringValue, anniversaryDate: json["AnniversaryDate"].stringValue, companyName: json["CompanyName"].stringValue, isAllowAllPersmission: json["IsAllowAllPersmission"].boolValue, gender: json["Gender"].stringValue, isAllowedToAddMeetingDates: json["IsAllowedToAddMeetingDates"].boolValue, isAllowedtoViewCnT: json["IsAllowedtoViewCnT"].boolValue, website: json["Website"].stringValue, memberName: json["MemberName"].stringValue, recieptUrl: json["RecieptUrl"].stringValue, isAllowedToViewEventReport: json["IsAllowedToViewEventReport"].boolValue, spouseNumber: json["SpouseNumber"].intValue, visitingCardFront: json["VisitingCardFront"].stringValue, address: json["Address"].stringValue, isAllowedToAddEvent: json["IsAllowedToAddEvent"].boolValue, gothra: json["Gothra"].stringValue, facebookPage: json["FacebookPage"].stringValue, id: json["Id"].intValue, adharNumber: json["AdharNumber"].intValue, hubName: json["HubName"].stringValue, token: json["Token"].stringValue, dob: json["Dob"].stringValue, category: json["Category"].stringValue, membershipId: json["MembershipId"].stringValue, isNewMember: json["IsNewMember"].boolValue, visitingCardBack: json["VisitingCardBack"].stringValue, bloodGroup: json["BloodGroup"].stringValue, flag: json["Flag"].intValue, isAllowedToRegisterVisitor: json["IsAllowedToRegisterVisitor"].boolValue, photoURL: json["PhotoURL"].stringValue, phoneNumber: json["PhoneNumber"].stringValue)
+         
+     }
 
 }
