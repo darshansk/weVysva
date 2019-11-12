@@ -7,9 +7,10 @@
 //
 
 import UIKit
-
+import CoreData
 class EditProfileViewController: UIViewController {
     
+    @IBOutlet weak var userImageView: UIImageView!
     @IBOutlet weak var nameTextField: UITextField!
     @IBOutlet weak var emailTextField: UITextField!
     @IBOutlet weak var address: UITextField!
@@ -29,7 +30,7 @@ class EditProfileViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         placeHolderSetUp()
-        // Do any additional setup after loading the view.
+     textFieldUpdation()
     }
     func placeHolderSetUp(){
         memberIdTextField.placeholder = "Member ID"
@@ -49,6 +50,40 @@ class EditProfileViewController: UIViewController {
     
     }
 
-
+    func textFieldUpdation(){
+memberIdTextField.text = UserDefaults.standard.string(forKey: "membershipId")
+nameTextField.text = UserDefaults.standard.string(forKey: "memberName")
+address.text = UserDefaults.standard.string(forKey: "address")
+emailTextField.text = UserDefaults.standard.string(forKey: "email")
+houseTextField.text = UserDefaults.standard.string(forKey: "hubName")
+aadharNumberTextField.text = UserDefaults.standard.string(forKey: "adharNumber")
+facebookProfileTextField.text = UserDefaults.standard.string(forKey: "facebook")
+dateOfBirthTextField.text = UserDefaults.standard.string(forKey: "dOB")
+dateOfMarriageTextField.text = UserDefaults.standard.string(forKey: "dOM")
+genderTextField.text = UserDefaults.standard.string(forKey: "gender")
+gothramTextField.text = UserDefaults.standard.string(forKey: "gothra")
+catagoryTextField.text = UserDefaults.standard.string(forKey: "category")
+phoneTextField.text = UserDefaults.standard.string(forKey: "phoneNo")
+websiteTextField.text = UserDefaults.standard.string(forKey: "website")
+        userImageView.load(imageUrl: UserDefaults.standard.string(forKey: "memberphotoUrl")!)
+    }
+    
+//MARK:- Networking
+    let url: URL = URL(string: "https://quickworkz.com/wv/controller/editprofile.php?type=EditMember")!
+    let parameters: [String: String] = [
+        "token": UserDefaults.standard.string(forKey: "token")!,
+        "id": UserDefaults.standard.string(forKey: "id")!,
+        "memberName": UserDefaults.standard.string(forKey: "memberName")!,
+        "address": UserDefaults.standard.string(forKey: "address")!,
+        "phoneNumber": UserDefaults.standard.string(forKey: "phoneNo")!,
+        "email": UserDefaults.standard.string(forKey: "email")!,
+        "gender": UserDefaults.standard.string(forKey: "gender")!,
+        
+       // Off done
+        
+    ];
+    
+    
+    
 
 }

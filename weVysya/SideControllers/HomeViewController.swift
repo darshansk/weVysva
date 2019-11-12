@@ -7,17 +7,27 @@
 //
 
 import UIKit
-
+import SDWebImage
 class HomeViewController: UIViewController {
     let transiton = SlideInTransition()
-
+    let defaultImageUrl = "https://cdn.business2community.com/wp-content/uploads/2017/08/blank-profile-picture-973460_640.png"
     @IBOutlet weak var userImage: UIImageView!
     
+    @IBOutlet weak var userNameLabel: UILabel!
+    @IBOutlet weak var memberButton: UIButton!
     override func viewDidLoad() {
-        super.viewDidLoad()
-        userImage.layer.cornerRadius = userImage.frame.width/2
-        userImage.clipsToBounds = true
+ super.viewDidLoad()
+        let imageURL = UserDefaults.standard.string(forKey: "memberphotoUrl") ?? defaultImageUrl
+       userImage.layer.borderWidth=1.0
+       userImage.layer.masksToBounds = false
+        userImage.layer.borderColor = UIColor.white.cgColor
+       userImage.layer.cornerRadius = userImage.frame.size.height/2
+       userImage.clipsToBounds = true
        
+        userImage.load(imageUrl: imageURL)
+     //   userImage.sd_setImage(with: URL(string: imageURL), placeholderImage: UIImage(named: "Profile.png"))
+      
+        userNameLabel.text = UserDefaults.standard.string(forKey: "memberName") ?? "WeVysva User" 
         
     }
     
@@ -39,13 +49,13 @@ class HomeViewController: UIViewController {
         case .editProfile:
             self.performSegue(withIdentifier: "editProfileSegue", sender: self)
         case .viewLink:
-            viewlinks()
+                openPage(storyboard: "Links", view: "ViewLinksViewController")
         case .viewDeal:
-            viewDeals()
+            openPage(storyboard: "Deals", view: "ViewDealsVC")
         case .viewOnetoOne:
-                viewOnetoOne()
+                openPage(storyboard: "OnetoOne", view: "ViewOneToOneViewController")
         case .viewVisitors:
-            self.performSegue(withIdentifier: "viewVisitorsSegue", sender: self)
+                openPage(storyboard: "MemberList", view: "viewVisitorsViewController")
         case .renew:
             self.performSegue(withIdentifier: "renewSegue", sender: self)
         case .contactUs:
@@ -53,54 +63,33 @@ class HomeViewController: UIViewController {
         case .faq:
             self.performSegue(withIdentifier: "faqSegue", sender: self)
         case .visitorRegistration:
-            addVisitorView()
+            openPage(storyboard: "MemberList", view: "vistorRegistrationViewController")
         case .addMeetingDate:
-         meetingDate()
+         openPage(storyboard: "MeetingDates", view: "addMeetingDateViewController")
         case .logout:
+            
             self.logOut()
         }
         
     }
-   
-    func addVisitorView(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "MeetingList", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "vistorRegistrationViewController")
-        newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-           self.present(newViewController, animated: true, completion: nil)
+
+    
+    func openPage(storyboard: String, view: String ){
+        let storyBoard: UIStoryboard = UIStoryboard(name: storyboard, bundle: nil)
+              let newViewController = storyBoard.instantiateViewController(withIdentifier: view)
+              newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
+                 self.present(newViewController, animated: true, completion: nil)
     }
-    func meetingDate(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "MeetingDates", bundle: nil)
-               let newViewController = storyBoard.instantiateViewController(withIdentifier: "addMeetingDateViewController")
-               newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-                  self.present(newViewController, animated: true, completion: nil)
-    }
+    
     func logOut(){
        
         UserDefaults.standard.set(false, forKey: "isUserLoggedIn")
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Main", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "LogInViewController")
-        newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-           self.present(newViewController, animated: true, completion: nil)
+        openPage(storyboard: "Main", view: "LogInViewController")
+        
     }
-    func viewlinks(){
-           let storyBoard: UIStoryboard = UIStoryboard(name: "Links", bundle: nil)
-           let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewLinksViewController")
-           newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-              self.present(newViewController, animated: true, completion: nil)
-       }
-    func viewDeals(){
-        let storyBoard: UIStoryboard = UIStoryboard(name: "Deals", bundle: nil)
-        let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewDealsViewController")
-        newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-           self.present(newViewController, animated: true, completion: nil)
-    }
+
+  
     
-    func viewOnetoOne(){
-           let storyBoard: UIStoryboard = UIStoryboard(name: "OnetoOne", bundle: nil)
-           let newViewController = storyBoard.instantiateViewController(withIdentifier: "ViewOneToOneViewController")
-           newViewController.modalPresentationStyle = UIModalPresentationStyle.fullScreen
-              self.present(newViewController, animated: true, completion: nil)
-       }
 }
 
 

@@ -65,22 +65,24 @@ class LogInViewController: UIViewController {
                 if response.result.isSuccess == true {
                     self.removeSpinner()
                     let responseJSON: JSON = JSON(response.result.value!)
-                      DispatchQueue.main.async(){
-                        self.updateUserData(json: responseJSON)
-                    }
+
                      if responseJSON["flag"] == "1" {
                        UserDefaults.standard.set(true, forKey: "isUserLoggedIn")
+                          DispatchQueue.main.async(){
+                            self.updateUserData(json: responseJSON)
+                        }
                         self.performSegue(withIdentifier: "homePageSegue", sender: self)
                          print(responseJSON)
                         
                      }
                     else{
+                        self.removeSpinner()
                         self.showToast(message : " Wrong Credentials", color: UIColor.gray)
                     }
                 }
-                else{
-                                       print("SignInError \(String(describing: response.result.error))")
-                                                      self.showToast(message : "Connection Issues", color: UIColor.gray)
+                else{          self.removeSpinner()
+                        print("SignInError\(String(describing:response.result.error))")
+                        self.showToast(message : "Connection Issues", color: UIColor.gray)
                                 }
                 
             
@@ -93,11 +95,33 @@ class LogInViewController: UIViewController {
 }
     
     func updateUserData(json: JSON){
+       
+        UserDefaults.standard.setValue(json["token"].stringValue, forKey: "token")
+        UserDefaults.standard.setValue(json["Id"].stringValue, forKey: "id")
+        UserDefaults.standard.setValue(json["HubId"].stringValue, forKey: "hubId")
+        
+        UserDefaults.standard.set(json["PhotoURL"].stringValue, forKey: "memberphotoUrl")
+         UserDefaults.standard.setValue(json["MembershipId"].stringValue, forKey: "membershipId")
+        UserDefaults.standard.set(json["MemberName"].stringValue, forKey: "memberName")
+        UserDefaults.standard.set(json["Address"].stringValue, forKey: "address")
+        UserDefaults.standard.set(json["Email"].stringValue, forKey: "email")
+        UserDefaults.standard.set(json["PhoneNumber"].stringValue, forKey: "phoneNo")
+        UserDefaults.standard.set(json["Category"].stringValue, forKey: "category")
+        UserDefaults.standard.set(json["Gothra"].stringValue, forKey: "gothra")
+        UserDefaults.standard.set(json["Gender"].stringValue, forKey: "gender")
+        UserDefaults.standard.set(json["CompanyName"].stringValue, forKey: "companyName")
+        UserDefaults.standard.setValue(json["HubName"].stringValue, forKey: "hubName")
+        UserDefaults.standard.set(json["AnniversaryDate"].stringValue, forKey: "dOM")
+        UserDefaults.standard.set(json["DOB"].stringValue, forKey: "dOB")
+        UserDefaults.standard.set(json["FacebookPage"].stringValue, forKey: "facebook")
+        UserDefaults.standard.set(json["AdharNumber"].stringValue, forKey: "adharNumber")
+        UserDefaults.standard.set(json["Website"].stringValue, forKey: "website")
         
         
-         
-        let loggedInUser = User.init(age: json["Age"].intValue, isRenewed: json["IsRenewed"].boolValue, isAllowedToAddandViewAttendance: json["IsAllowedToAddandViewAttendance"].boolValue, hubId: json["HubId"].intValue, email: json["Email"].stringValue, anniversaryDate: json["AnniversaryDate"].stringValue, companyName: json["CompanyName"].stringValue, isAllowAllPersmission: json["IsAllowAllPersmission"].boolValue, gender: json["Gender"].stringValue, isAllowedToAddMeetingDates: json["IsAllowedToAddMeetingDates"].boolValue, isAllowedtoViewCnT: json["IsAllowedtoViewCnT"].boolValue, website: json["Website"].stringValue, memberName: json["MemberName"].stringValue, recieptUrl: json["RecieptUrl"].stringValue, isAllowedToViewEventReport: json["IsAllowedToViewEventReport"].boolValue, spouseNumber: json["SpouseNumber"].intValue, visitingCardFront: json["VisitingCardFront"].stringValue, address: json["Address"].stringValue, isAllowedToAddEvent: json["IsAllowedToAddEvent"].boolValue, gothra: json["Gothra"].stringValue, facebookPage: json["FacebookPage"].stringValue, id: json["Id"].intValue, adharNumber: json["AdharNumber"].intValue, hubName: json["HubName"].stringValue, token: json["Token"].stringValue, dob: json["Dob"].stringValue, category: json["Category"].stringValue, membershipId: json["MembershipId"].stringValue, isNewMember: json["IsNewMember"].boolValue, visitingCardBack: json["VisitingCardBack"].stringValue, bloodGroup: json["BloodGroup"].stringValue, flag: json["Flag"].intValue, isAllowedToRegisterVisitor: json["IsAllowedToRegisterVisitor"].boolValue, photoURL: json["PhotoURL"].stringValue, phoneNumber: json["PhoneNumber"].stringValue)
-         
-     }
+        
+         print( UserDefaults.standard.string(forKey: "token")!)
+    }
+
+
 
 }

@@ -16,6 +16,11 @@ extension UIColor {
 extension UIView{
     
 }
+extension Int: Sequence {
+    public func makeIterator() -> CountableRange<Int>.Iterator {
+        return (0..<self).makeIterator()
+    }
+}
 extension UIView {
     func addConstraintsWithFormat(format: String, views: UIView...) {
         var viewsDictionary = [String: UIView]()
@@ -76,7 +81,36 @@ extension HomeViewController: UIViewControllerTransitioningDelegate {
     }
 }
 var vSpinner: UIView?
+extension UIImageView {
+    func load(imageUrl: String) {
+      
+        let url = URL(string: imageUrl)!
+        DispatchQueue.global().async { [weak self] in
+            if let data = try? Data(contentsOf: url) {
+                if let image = UIImage(data: data) {
+                    DispatchQueue.main.async {
+                        
+                        self?.image = image
+                        
+                    }
+                }
+            }
+        }
+    }
+    
+}
 extension UIViewController {
+    //SystemDate
+    func systemDate() -> String{
+        let date = Date()
+                 let calendar = Calendar.current
+        let components = calendar.dateComponents([.year, .month, .day], from: date)
+         var currentDate: String = ""
+        
+        currentDate = "\(components.year ?? 0)-\(components.month ?? 0)-\(components.day ?? 0)"
+        return currentDate
+       
+    }
     //keyboard
     func hideKeyboardWhenTappedAround() {
         let tap: UITapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector(UIViewController.dismissKeyboard))

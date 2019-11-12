@@ -2,6 +2,46 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>address</key>
+	<string></string>
+	<key>adharNumber</key>
+	<string></string>
+	<key>website</key>
+	<string></string>
+	<key>facebook</key>
+	<string></string>
+	<key>dOB</key>
+	<string></string>
+	<key>dOM</key>
+	<string></string>
+	<key>companyName</key>
+	<string></string>
+	<key>gender</key>
+	<string></string>
+	<key>gothra</key>
+	<string></string>
+	<key>category</key>
+	<string></string>
+	<key>phoneNo</key>
+	<string></string>
+	<key>email</key>
+	<string></string>
+	<key>id</key>
+	<string></string>
+	<key>memberphotoUrl</key>
+	<string></string>
+	<key>memberName</key>
+	<string></string>
+	<key>hubName</key>
+	<string></string>
+	<key>UIUserInterfaceStyle</key>
+	<string>Light</string>
+	<key>membershipId</key>
+	<string></string>
+	<key>token</key>
+	<string></string>
+	<key>hubId</key>
+	<string>0</string>
 	<key>isUserLoggedIn</key>
 	<false/>
 	<key>CFBundleDevelopmentRegion</key>

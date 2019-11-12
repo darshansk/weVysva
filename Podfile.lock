@@ -1,12 +1,16 @@
 PODS:
-  - Alamofire (4.9.0)
+  - Alamofire (4.9.1)
   - iOSDropDown (0.3.4)
+  - SDWebImage (5.3.1):
+    - SDWebImage/Core (= 5.3.1)
+  - SDWebImage/Core (5.3.1)
   - SwiftyJSON (5.0.0)
   - TextFieldEffects (1.6.0)
 
 DEPENDENCIES:
   - Alamofire
   - iOSDropDown
+  - SDWebImage (~> 5.0)
   - SwiftyJSON
   - TextFieldEffects
 
@@ -14,15 +18,17 @@ SPEC REPOS:
   trunk:
     - Alamofire
     - iOSDropDown
+    - SDWebImage
     - SwiftyJSON
     - TextFieldEffects
 
 SPEC CHECKSUMS:
-  Alamofire: afc3e7c6db61476cb45cdd23fed06bad03bbc321
+  Alamofire: 85e8a02c69d6020a0d734f6054870d7ecb75cf18
   iOSDropDown: c10a761f9a00c3f1cc9d3bce43ae504628e2f692
+  SDWebImage: 7137d57385fb632129838c1e6ab9528a22c666cc
   SwiftyJSON: 36413e04c44ee145039d332b4f4e2d3e8d6c4db7
   TextFieldEffects: 529b8aff706fb40f82c41c780c0777941a893796
 
-PODFILE CHECKSUM: 76ec1c9a18b0efd7a00bd2fa2b4b44fbf42794c3
+PODFILE CHECKSUM: 22a976d9cbc0790be32d11e814a7460c5397592f
 
-COCOAPODS: 1.8.3
+COCOAPODS: 1.8.4

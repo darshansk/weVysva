@@ -31,7 +31,7 @@ class DTextField: UITextField {
         //font = UIFont(name: "Times", size: <#T##CGFloat#>)
         backgroundColor       = UIColor(white: 1.0, alpha: 0.5)
         autocorrectionType    = .no
-        layer.cornerRadius    = 25.0
+        layer.cornerRadius    = layer.frame.height/1.5
         clipsToBounds         = true
         
         let placeholder       = self.placeholder != nil ? self.placeholder! : ""

@@ -7,14 +7,23 @@
 //
 
 import UIKit
-
+import Alamofire
+import SwiftyJSON
 class ViewOneToOneViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
+    @IBOutlet weak var connectsLabel: UILabel!
+    @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var viewOneToOneTableVIew: UITableView!
     @IBOutlet weak var startDate: UITextField!
     @IBOutlet weak var endDate: UITextField!
      private var startdatePicker: UIDatePicker!
           private var enddatePicker: UIDatePicker!
+        let url = URL(string: "https://quickworkz.com/wv/controller/links.php?type=viewlinks")
+    
+    private var numberOfItems: Int = 0
+      private var membersName: [String] = []
+      private var memberTotalConnects: [String] = []
+    
           override func viewDidLoad() {
               super.viewDidLoad()
 
@@ -26,12 +35,89 @@ class ViewOneToOneViewController: UIViewController, UITableViewDelegate, UITable
               configureCell()
               viewOneToOneTableVIew.register(UINib(nibName: "ViewDetailsCell", bundle: nil), forCellReuseIdentifier: "viewDetailsCell")
           }
-          
+    
+    
+    @IBAction func viewButtonClicked(_ sender: Any) {
+        if startDate.text == "" || endDate.text == ""{
+              showToast(message: "Enter the Dates", color: UIColor.gray)
+          }
+          else{
+           self.showSpinner(onView: self.view)
+           loadData()
+          }
+    }
+    
+          //MARK:- load data
+    func loadData(){
+           let parameters: [String: String] = [
+           "token": UserDefaults.standard.string(forKey: "token")!,
+           "HubId": UserDefaults.standard.string(forKey: "hubId")!,
+           "FromDate": startDate.text!,
+           "ToDate": endDate.text!,   ];
+           
+           Alamofire.request(url!, method: .post, parameters: parameters, encoding: URLEncoding.default).responseJSON { (response) in
+               if response.result.isSuccess {
+                           let responseJSON: JSON = JSON(response.result.value!)
+                   
+                          print("View Links JSON: (\(responseJSON))")
+                   if responseJSON["flag"] == "1"{
+                           self.numberOfItems = responseJSON["Data"].count
+                       if self.numberOfItems != 0 {
+                           for i in self.numberOfItems {
+                           self.membersName.append(responseJSON["Data"][i]["MemberName"].stringValue)
+                      self.memberTotalConnects.append(responseJSON["Data"][i]["TotalConnects"].stringValue)
+                               
+                           }
+                           print(self.membersName)
+                           print(self.memberTotalConnects)
+                           self.viewOneToOneTableVIew.reloadData()
+                           self.removeSpinner()
+                       }
+                       else{
+                           self.showToast(message : "No Connects Found", color: UIColor.gray)
+                       }
+                   }
+                   else{
+                        self.showToast(message : "Session Expired", color: UIColor.gray)
+                     self.removeSpinner()
+                   }
+               }
+               else{
+                   print("View One to one Error\(String(describing: response.result.error))")
+                   self.showToast(message : "Connection Issues", color: UIColor.gray)
+                 self.removeSpinner()
+               }
+           }
+       }
+       
+    
+    
+    
+    
+    
+    
+    
+    
+    //TableView Methods
+    func tableViewHidden(bool: Bool){
+           nameLabel.isHidden = bool
+           connectsLabel.isHidden = bool
+           viewOneToOneTableVIew.isHidden = bool
+       }
           func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-              return 8
+              if numberOfItems == 0{
+                         tableViewHidden(bool: true)
+                          return numberOfItems
+                     }
+                     else{
+                         tableViewHidden(bool: false)
+                     return numberOfItems
+                     }
           }
           func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
               let cell = viewOneToOneTableVIew.dequeueReusableCell(withIdentifier: "viewDetailsCell", for: indexPath) as! ViewDetailsCell
+            cell.nameLabel.text = membersName[indexPath.row]
+                   cell.numberLabel.text = memberTotalConnects[indexPath.row]
               return cell
           }
 

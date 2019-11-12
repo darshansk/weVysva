@@ -14,10 +14,15 @@
 		5C4C5AAC235DE78C00B7A2FD /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5C4C5AAB235DE78C00B7A2FD /* Assets.xcassets */; };
 		5C4D41592359EEC600D9D259 /* MenuViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C4D41582359EEC600D9D259 /* MenuViewController.swift */; };
 		5C53C111235844D800761BE1 /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C53C110235844D800761BE1 /* HomeViewController.swift */; };
+		5C56444723682315003D8199 /* UserData.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5C56444523682315003D8199 /* UserData.xcdatamodeld */; };
+		5C56448823684BA1003D8199 /* faqCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C56448723684BA1003D8199 /* faqCustomCell.swift */; };
 		A3DED2F59F8537F940AFE1D7 /* Pods_weVysya.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0ABE6C34A15EB54EE78122C9 /* Pods_weVysya.framework */; };
+		E7283386237A7BA800A1B903 /* OneToOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7283385237A7BA800A1B903 /* OneToOneViewController.swift */; };
+		E754462E23732622008754F0 /* DealViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E754462D23732622008754F0 /* DealViewController.swift */; };
 		E76BBF0D235F29F100A01B2A /* Links.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBF0C235F29F100A01B2A /* Links.storyboard */; };
 		E76BBF12235F316300A01B2A /* LinkViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E76BBF11235F316300A01B2A /* LinkViewController.swift */; };
 		E76BBF15235F3F1900A01B2A /* Deals.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E76BBF14235F3F1900A01B2A /* Deals.storyboard */; };
+		E770A65A236AF8D300E1FA3F /* ViewVisitorsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E770A659236AF8D300E1FA3F /* ViewVisitorsViewController.swift */; };
 		E77707432362BA6B00095CF6 /* OneToOneCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E77707412362BA6B00095CF6 /* OneToOneCell.xib */; };
 		E77707442362BA6B00095CF6 /* OneToOneCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77707422362BA6B00095CF6 /* OneToOneCell.swift */; };
 		E77707462362BC7500095CF6 /* MyDealsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E77707452362BC7500095CF6 /* MyDealsViewController.swift */; };
@@ -45,6 +50,8 @@
 		E7A2B3A32361B21F004635B1 /* LinksCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B3A12361B21F004635B1 /* LinksCard.swift */; };
 		E7A2B3A62361D7AA004635B1 /* MyOneToOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */; };
 		E7A2B3A82361D867004635B1 /* OnetoOne.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E7A2B3A72361D867004635B1 /* OnetoOne.storyboard */; };
+		E7A751EC2374161B00FACB3D /* MyPerformanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A751EB2374161B00FACB3D /* MyPerformanceViewController.swift */; };
+		E7A751EE237428F400FACB3D /* MeetingPopUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7A751ED237428F400FACB3D /* MeetingPopUpViewController.swift */; };
 		E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7BADB3F235F44880041E27E /* MyLinksViewController.swift */; };
 		E7D7AF862366BD10006A89C5 /* ViewDetailsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF842366BD10006A89C5 /* ViewDetailsCell.swift */; };
 		E7D7AF872366BD10006A89C5 /* ViewDetailsCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E7D7AF852366BD10006A89C5 /* ViewDetailsCell.xib */; };
@@ -53,7 +60,6 @@
 		E7D7AF8D2366C568006A89C5 /* ViewOneToOneViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF8C2366C568006A89C5 /* ViewOneToOneViewController.swift */; };
 		E7D7AF8F2366CE16006A89C5 /* AddMeetingDateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF8E2366CE15006A89C5 /* AddMeetingDateViewController.swift */; };
 		E7D7AF912366E750006A89C5 /* FAQViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF902366E750006A89C5 /* FAQViewController.swift */; };
-		E7D7AF93236700EE006A89C5 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7D7AF92236700EE006A89C5 /* User.swift */; };
 		E7EAF9CB2357188800811006 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E7EAF9CA2357188800811006 /* CardView.swift */; };
 		ED8F17A42355B138006CB5A7 /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F17A32355B138006CB5A7 /* Extensions.swift */; };
 		ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = ED8F17A52355B21F006CB5A7 /* Theme.swift */; };
@@ -74,11 +80,16 @@
 		5C4C5AAB235DE78C00B7A2FD /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5C4D41582359EEC600D9D259 /* MenuViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuViewController.swift; sourceTree = "<group>"; };
 		5C53C110235844D800761BE1 /* HomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		5C56444623682315003D8199 /* UserData.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = UserData.xcdatamodel; sourceTree = "<group>"; };
+		5C56448723684BA1003D8199 /* faqCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = faqCustomCell.swift; sourceTree = "<group>"; };
 		73855A495F995C5A3A98B08C /* Pods-weVysya.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weVysya.debug.xcconfig"; path = "Target Support Files/Pods-weVysya/Pods-weVysya.debug.xcconfig"; sourceTree = "<group>"; };
 		B13C11639131DF606B51B738 /* Pods-weVysya.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-weVysya.release.xcconfig"; path = "Target Support Files/Pods-weVysya/Pods-weVysya.release.xcconfig"; sourceTree = "<group>"; };
+		E7283385237A7BA800A1B903 /* OneToOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OneToOneViewController.swift; sourceTree = "<group>"; };
+		E754462D23732622008754F0 /* DealViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DealViewController.swift; sourceTree = "<group>"; };
 		E76BBF0C235F29F100A01B2A /* Links.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Links.storyboard; sourceTree = "<group>"; };
 		E76BBF11235F316300A01B2A /* LinkViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LinkViewController.swift; sourceTree = "<group>"; };
 		E76BBF14235F3F1900A01B2A /* Deals.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Deals.storyboard; sourceTree = "<group>"; };
+		E770A659236AF8D300E1FA3F /* ViewVisitorsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewVisitorsViewController.swift; sourceTree = "<group>"; };
 		E77707412362BA6B00095CF6 /* OneToOneCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = OneToOneCell.xib; sourceTree = "<group>"; };
 		E77707422362BA6B00095CF6 /* OneToOneCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OneToOneCell.swift; sourceTree = "<group>"; };
 		E77707452362BC7500095CF6 /* MyDealsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyDealsViewController.swift; sourceTree = "<group>"; };
@@ -106,6 +117,8 @@
 		E7A2B3A12361B21F004635B1 /* LinksCard.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LinksCard.swift; sourceTree = "<group>"; };
 		E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyOneToOneViewController.swift; sourceTree = "<group>"; };
 		E7A2B3A72361D867004635B1 /* OnetoOne.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = OnetoOne.storyboard; sourceTree = "<group>"; };
+		E7A751EB2374161B00FACB3D /* MyPerformanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPerformanceViewController.swift; sourceTree = "<group>"; };
+		E7A751ED237428F400FACB3D /* MeetingPopUpViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MeetingPopUpViewController.swift; sourceTree = "<group>"; };
 		E7BADB3F235F44880041E27E /* MyLinksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyLinksViewController.swift; sourceTree = "<group>"; };
 		E7D7AF842366BD10006A89C5 /* ViewDetailsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewDetailsCell.swift; sourceTree = "<group>"; };
 		E7D7AF852366BD10006A89C5 /* ViewDetailsCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ViewDetailsCell.xib; sourceTree = "<group>"; };
@@ -114,7 +127,6 @@
 		E7D7AF8C2366C568006A89C5 /* ViewOneToOneViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewOneToOneViewController.swift; sourceTree = "<group>"; };
 		E7D7AF8E2366CE15006A89C5 /* AddMeetingDateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddMeetingDateViewController.swift; sourceTree = "<group>"; };
 		E7D7AF902366E750006A89C5 /* FAQViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FAQViewController.swift; sourceTree = "<group>"; };
-		E7D7AF92236700EE006A89C5 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
 		E7EAF9CA2357188800811006 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
 		ED8F17A32355B138006CB5A7 /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
 		ED8F17A52355B21F006CB5A7 /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
@@ -161,17 +173,21 @@
 			isa = PBXGroup;
 			children = (
 				E76BBF11235F316300A01B2A /* LinkViewController.swift */,
-				E7BADB3F235F44880041E27E /* MyLinksViewController.swift */,
+				E754462D23732622008754F0 /* DealViewController.swift */,
+				E7283385237A7BA800A1B903 /* OneToOneViewController.swift */,
 				E7A2B3A52361D7AA004635B1 /* MyOneToOneViewController.swift */,
+				E7BADB3F235F44880041E27E /* MyLinksViewController.swift */,
 				E77707452362BC7500095CF6 /* MyDealsViewController.swift */,
 				E777074B2362BF7600095CF6 /* MeetingDatesViewController.swift */,
 				E77707592362D58800095CF6 /* MemberListViewController.swift */,
 				E777075F2362F47B00095CF6 /* LinksPopUpViewController.swift */,
 				E7770761236314AB00095CF6 /* DealsPopUpViewController.swift */,
+				E777076B23631F2B00095CF6 /* HousePopUpViewController.swift */,
 				E7770763236314C700095CF6 /* OneToOnePopUpViewController.swift */,
 				E7770765236316AE00095CF6 /* MemberListPopUpViewController.swift */,
 				E777076923631F0F00095CF6 /* HouseViewController.swift */,
-				E777076B23631F2B00095CF6 /* HousePopUpViewController.swift */,
+				E7A751EB2374161B00FACB3D /* MyPerformanceViewController.swift */,
+				E7A751ED237428F400FACB3D /* MeetingPopUpViewController.swift */,
 			);
 			path = HomeControllers;
 			sourceTree = "<group>";
@@ -228,6 +244,8 @@
 				E7D7AF8C2366C568006A89C5 /* ViewOneToOneViewController.swift */,
 				E7D7AF8E2366CE15006A89C5 /* AddMeetingDateViewController.swift */,
 				E7D7AF902366E750006A89C5 /* FAQViewController.swift */,
+				5C56448723684BA1003D8199 /* faqCustomCell.swift */,
+				E770A659236AF8D300E1FA3F /* ViewVisitorsViewController.swift */,
 			);
 			path = SideControllers;
 			sourceTree = "<group>";
@@ -261,7 +279,7 @@
 				EDA598282354A59300B2EC6D /* AppDelegate.swift */,
 				5C4C5AAB235DE78C00B7A2FD /* Assets.xcassets */,
 				EDA598342354A59700B2EC6D /* Info.plist */,
-				E7D7AF92236700EE006A89C5 /* User.swift */,
+				5C56444523682315003D8199 /* UserData.xcdatamodeld */,
 			);
 			path = weVysya;
 			sourceTree = "<group>";
@@ -408,13 +426,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5C56444723682315003D8199 /* UserData.xcdatamodeld in Sources */,
 				E7D7AF8F2366CE16006A89C5 /* AddMeetingDateViewController.swift in Sources */,
 				E7D7AF8D2366C568006A89C5 /* ViewOneToOneViewController.swift in Sources */,
 				5C4C5AAA235DE0D700B7A2FD /* EditProfileViewController.swift in Sources */,
 				EDA5983E2354A62B00B2EC6D /* DButton.swift in Sources */,
+				E7A751EC2374161B00FACB3D /* MyPerformanceViewController.swift in Sources */,
 				EDA5983D2354A62B00B2EC6D /* DTextField.swift in Sources */,
 				E7D7AF892366C010006A89C5 /* ViewLinksViewController.swift in Sources */,
 				E7770762236314AB00095CF6 /* DealsPopUpViewController.swift in Sources */,
+				E770A65A236AF8D300E1FA3F /* ViewVisitorsViewController.swift in Sources */,
 				EDA5982B2354A59300B2EC6D /* LogInViewController.swift in Sources */,
 				E777074C2362BF7600095CF6 /* MeetingDatesViewController.swift in Sources */,
 				E777076F23632BDB00095CF6 /* HousesCell.swift in Sources */,
@@ -425,13 +446,16 @@
 				EDA598292354A59300B2EC6D /* AppDelegate.swift in Sources */,
 				E7BADB40235F44880041E27E /* MyLinksViewController.swift in Sources */,
 				E77707602362F47B00095CF6 /* LinksPopUpViewController.swift in Sources */,
+				E754462E23732622008754F0 /* DealViewController.swift in Sources */,
 				E77707442362BA6B00095CF6 /* OneToOneCell.swift in Sources */,
-				E7D7AF93236700EE006A89C5 /* User.swift in Sources */,
 				E777075D2362D81900095CF6 /* MemberListCell.swift in Sources */,
+				E7A751EE237428F400FACB3D /* MeetingPopUpViewController.swift in Sources */,
 				E77707502362C13D00095CF6 /* MeetingDatesCell.swift in Sources */,
 				E7D7AF912366E750006A89C5 /* FAQViewController.swift in Sources */,
 				E7D7AF862366BD10006A89C5 /* ViewDetailsCell.swift in Sources */,
 				5C4C5AA6235DDAE800B7A2FD /* RenewViewController.swift in Sources */,
+				5C56448823684BA1003D8199 /* faqCustomCell.swift in Sources */,
+				E7283386237A7BA800A1B903 /* OneToOneViewController.swift in Sources */,
 				E777076A23631F0F00095CF6 /* HouseViewController.swift in Sources */,
 				E7770766236316AE00095CF6 /* MemberListPopUpViewController.swift in Sources */,
 				ED8F17A62355B21F006CB5A7 /* Theme.swift in Sources */,
@@ -650,6 +674,19 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		5C56444523682315003D8199 /* UserData.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				5C56444623682315003D8199 /* UserData.xcdatamodel */,
+			);
+			currentVersion = 5C56444623682315003D8199 /* UserData.xcdatamodel */;
+			path = UserData.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
 	};
 	rootObject = EDA5981D2354A59300B2EC6D /* Project object */;
 }

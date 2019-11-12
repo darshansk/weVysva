@@ -9,5 +9,6 @@ target 'weVysya' do
   pod 'SwiftyJSON'
 	pod 'TextFieldEffects'
   pod 'iOSDropDown'
+  pod 'SDWebImage', '~> 5.0'
 
 end
